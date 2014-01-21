@@ -1,5 +1,14 @@
 RogueTattoo::Application.routes.draw do
+
+  devise_for :admins
+  
+  devise_scope :admin do
+      get 'superuser' => "devise/registrations#new"
+  end
+  
   get "home/index"
+  
+  
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
