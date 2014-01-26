@@ -1,11 +1,7 @@
 // import the CSS framework
 @import "bootstrap";
 
-body
-{
-    background-color: #000000;
-    color: white;
-}
+
 
 // make all images responsive by default
 img {
@@ -40,7 +36,7 @@ img {
 // to make views framework-neutral
 main {
   @extend .container;
-  background-color: #000000;
+  //background-color: #000000;
   //padding-bottom: 80px;
   width: 100%;
   margin-top: 51px; // accommodate the navbar

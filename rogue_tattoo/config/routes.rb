@@ -1,5 +1,8 @@
 RogueTattoo::Application.routes.draw do
-
+  get 'dashboard' => "home#dashboard"
+  
+  resources :artist
+  
   devise_for :admins
   
   devise_scope :admin do
