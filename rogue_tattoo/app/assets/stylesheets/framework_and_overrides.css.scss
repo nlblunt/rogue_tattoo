@@ -13,6 +13,10 @@ img {
   font-size: inherit;
   }
 
+.dropdown-menu>li>a
+{
+    color:white;
+}
 // THESE ARE EXAMPLES YOU CAN MODIFY
 // create your own classes
 // to make views framework-neutral
@@ -39,7 +43,7 @@ main {
   //background-color: #000000;
   //padding-bottom: 80px;
   width: 100%;
-  margin-top: 51px; // accommodate the navbar
+  margin-top: 40px; // accommodate the navbar
   }
 section {
   @extend .row;
@@ -61,4 +65,9 @@ section {
 .margin-remove
 {
     padding: 0 15px;
+}
+
+.dropdown-menu
+{
+ color:white;   
 }

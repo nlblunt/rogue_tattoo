@@ -34,6 +34,10 @@ class ArtistController < ApplicationController
       redirect_to dashboard_path
     end
 
+    def show
+        
+    end
+    
     def artist_params
       params.require(:artist).permit(:avatar, :name, :bio)
     end
