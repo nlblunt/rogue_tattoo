@@ -1,0 +1,30 @@
+<div class='row'>
+    <h1 class="text-center">Edit Tattoo Artist</h1>
+    <div class='col-md-6'>
+        
+        <%= form_for @artist, url: artist_path, :html => { :multipart => true }, method: :patch do |a| %>
+        <div class="form-group">
+            <label>Name</label>
+            <%= a.text_field :name, class: 'form-control' %>
+        </div>
+
+        <div class='form-group'>
+            <label>Bio</label>
+            <%= a.text_area :bio, class: 'form-control' %>
+        </div>
+        
+        <div class='form-group'>
+            <label>Choose file to change profile picture</label>
+            <%= a.file_field :avatar %>
+        </div>
+        <div class='form-group'>
+            <%= a.submit %>
+        </div>
+        <% end %>
+    </div>
+    
+    <div class='col-md-6'>
+        <h3 class="text-center">Current Profile Picture</h3><br>
+        <%= image_tag @artist.avatar.url(:medium) %>
+    </div>
+</div>
