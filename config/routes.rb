@@ -1,4 +1,6 @@
 RogueTattoo::Application.routes.draw do
+  get "client/new"
+  get "client/edit"
   get 'dashboard' => "home#dashboard"
   
   resources :artist
