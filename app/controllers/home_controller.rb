@@ -6,6 +6,8 @@ class HomeController < ApplicationController
   
   def dashboard
       if(admin_signed_in?)
+          #layout 'dashboard'
+          
           @artists = Artist.all
           @clients = Client.all
       else

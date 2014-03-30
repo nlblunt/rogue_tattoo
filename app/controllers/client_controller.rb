@@ -12,6 +12,7 @@ class ClientController < ApplicationController
   end
   
   def edit
+      @stories = Story.all(:conditions => ["client_id = ?", params[:id]])
       
   end
   
