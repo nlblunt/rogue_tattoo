@@ -10,6 +10,7 @@ gem 'paperclip'
 # Use sqlite3 as the database for Active Record
 group :production do
   gem 'pg'
+  gem 'aws-sdk'
 end
 
 group :development, :test do
