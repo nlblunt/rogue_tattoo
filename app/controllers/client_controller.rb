@@ -13,7 +13,7 @@ class ClientController < ApplicationController
   
   def edit
       @stories = Story.all(:conditions => ["client_id = ?", params[:id]])
-      
+      @client = Client.find(params[:id])
   end
   
   def destroy
