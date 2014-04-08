@@ -57,3 +57,239 @@ I, [2014-02-01T23:45:42.733226 #232475]  INFO -- : 0:  sdoc (0.4.0) from /usr/li
 I, [2014-02-01T23:45:42.749945 #232475]  INFO -- : 0:  sqlite3 (1.3.8) from /usr/libexec/openshift/cartridges/c9-0.1/root/lib/ruby/gems/specifications/sqlite3-1.3.8.gemspec
 I, [2014-02-01T23:45:42.755867 #232475]  INFO -- : 0:  turbolinks (2.2.0) from /usr/libexec/openshift/cartridges/c9-0.1/root/lib/ruby/gems/specifications/turbolinks-2.2.0.gemspec
 I, [2014-02-01T23:45:42.759138 #232475]  INFO -- : 0:  uglifier (2.4.0) from /usr/libexec/openshift/cartridges/c9-0.1/root/lib/ruby/gems/specifications/uglifier-2.4.0.gemspec
+I, [2014-04-08T08:21:55.879456 #2288]  INFO -- : 0:  rake (10.1.1) from c:/Ruby200-x64/lib/ruby/gems/2.0.0/specifications/rake-10.1.1.gemspec
+I, [2014-04-08T08:21:55.900457 #2288]  INFO -- : 0:  i18n (0.6.9) from c:/Ruby200-x64/lib/ruby/gems/2.0.0/specifications/i18n-0.6.9.gemspec
+I, [2014-04-08T08:21:55.902458 #2288]  INFO -- : 0:  minitest (4.7.5) from c:/Ruby200-x64/lib/ruby/gems/2.0.0/specifications/minitest-4.7.5.gemspec
+I, [2014-04-08T08:21:55.904415 #2288]  INFO -- : 0:  multi_json (1.8.4) from c:/Ruby200-x64/lib/ruby/gems/2.0.0/specifications/multi_json-1.8.4.gemspec
+I, [2014-04-08T08:21:55.906417 #2288]  INFO -- : 0:  atomic (1.1.14) from c:/Ruby200-x64/lib/ruby/gems/2.0.0/specifications/atomic-1.1.14.gemspec
+I, [2014-04-08T08:21:55.909456 #2288]  INFO -- : 0:  thread_safe (0.1.3) from c:/Ruby200-x64/lib/ruby/gems/2.0.0/specifications/thread_safe-0.1.3.gemspec
+I, [2014-04-08T08:21:55.912421 #2288]  INFO -- : 0:  tzinfo (0.3.38) from c:/Ruby200-x64/lib/ruby/gems/2.0.0/specifications/tzinfo-0.3.38.gemspec
+I, [2014-04-08T08:21:55.914445 #2288]  INFO -- : 0:  activesupport (4.0.2) from c:/Ruby200-x64/lib/ruby/gems/2.0.0/specifications/activesupport-4.0.2.gemspec
+I, [2014-04-08T08:21:55.916454 #2288]  INFO -- : 0:  builder (3.1.4) from c:/Ruby200-x64/lib/ruby/gems/2.0.0/specifications/builder-3.1.4.gemspec
+I, [2014-04-08T08:21:55.918457 #2288]  INFO -- : 0:  erubis (2.7.0) from c:/Ruby200-x64/lib/ruby/gems/2.0.0/specifications/erubis-2.7.0.gemspec
+I, [2014-04-08T08:21:55.922459 #2288]  INFO -- : 0:  rack (1.5.2) from c:/Ruby200-x64/lib/ruby/gems/2.0.0/specifications/rack-1.5.2.gemspec
+I, [2014-04-08T08:21:55.924458 #2288]  INFO -- : 0:  rack-test (0.6.2) from c:/Ruby200-x64/lib/ruby/gems/2.0.0/specifications/rack-test-0.6.2.gemspec
+I, [2014-04-08T08:21:55.936442 #2288]  INFO -- : 0:  actionpack (4.0.2) from c:/Ruby200-x64/lib/ruby/gems/2.0.0/specifications/actionpack-4.0.2.gemspec
+I, [2014-04-08T08:21:55.940457 #2288]  INFO -- : 0:  mime-types (1.25.1) from c:/Ruby200-x64/lib/ruby/gems/2.0.0/specifications/mime-types-1.25.1.gemspec
+I, [2014-04-08T08:21:55.943487 #2288]  INFO -- : 0:  polyglot (0.3.3) from c:/Ruby200-x64/lib/ruby/gems/2.0.0/specifications/polyglot-0.3.3.gemspec
+I, [2014-04-08T08:21:55.946413 #2288]  INFO -- : 0:  treetop (1.4.15) from c:/Ruby200-x64/lib/ruby/gems/2.0.0/specifications/treetop-1.4.15.gemspec
+I, [2014-04-08T08:21:55.948447 #2288]  INFO -- : 0:  mail (2.5.4) from c:/Ruby200-x64/lib/ruby/gems/2.0.0/specifications/mail-2.5.4.gemspec
+I, [2014-04-08T08:21:55.950460 #2288]  INFO -- : 0:  actionmailer (4.0.2) from c:/Ruby200-x64/lib/ruby/gems/2.0.0/specifications/actionmailer-4.0.2.gemspec
+I, [2014-04-08T08:21:55.952447 #2288]  INFO -- : 0:  activemodel (4.0.2) from c:/Ruby200-x64/lib/ruby/gems/2.0.0/specifications/activemodel-4.0.2.gemspec
+I, [2014-04-08T08:21:55.956412 #2288]  INFO -- : 0:  activerecord-deprecated_finders (1.0.3) from c:/Ruby200-x64/lib/ruby/gems/2.0.0/specifications/activerecord-deprecated_finders-1.0.3.gemspec
+I, [2014-04-08T08:21:55.958461 #2288]  INFO -- : 0:  arel (4.0.1) from c:/Ruby200-x64/lib/ruby/gems/2.0.0/specifications/arel-4.0.1.gemspec
+I, [2014-04-08T08:21:55.991441 #2288]  INFO -- : 0:  activerecord (4.0.2) from c:/Ruby200-x64/lib/ruby/gems/2.0.0/specifications/activerecord-4.0.2.gemspec
+I, [2014-04-08T08:21:55.993462 #2288]  INFO -- : 0:  json (1.8.1) from c:/Ruby200-x64/lib/ruby/gems/2.0.0/specifications/json-1.8.1.gemspec
+I, [2014-04-08T08:21:57.350088 #2288]  INFO -- : 0:  mini_portile (0.5.3) from c:/Ruby200-x64/lib/ruby/gems/2.0.0/specifications/mini_portile-0.5.3.gemspec
+E, [2014-04-08T08:22:21.927078 #2288] ERROR -- : Gem::Installer::ExtensionBuildError: ERROR: Failed to build gem native extension.
+
+    c:/Ruby200-x64/bin/ruby.exe extconf.rb 
+checking for libxml/parser.h... no
+-----
+libxml2 is missing.  please visit http://nokogiri.org/tutorials/installing_nokogiri.html for help with installing dependencies.
+-----
+*** extconf.rb failed ***
+Could not create Makefile due to some reason, probably lack of necessary
+libraries and/or headers.  Check the mkmf.log file for more details.  You may
+need configuration options.
+
+Provided configuration options:
+	--with-opt-dir
+	--without-opt-dir
+	--with-opt-include
+	--without-opt-include=${opt-dir}/include
+	--with-opt-lib
+	--without-opt-lib=${opt-dir}/lib
+	--with-make-prog
+	--without-make-prog
+	--srcdir=.
+	--curdir
+	--ruby=c:/Ruby200-x64/bin/ruby
+	--with-zlib-dir
+	--without-zlib-dir
+	--with-zlib-include
+	--without-zlib-include=${zlib-dir}/include
+	--with-zlib-lib
+	--without-zlib-lib=${zlib-dir}/lib
+	--with-iconv-dir
+	--without-iconv-dir
+	--with-iconv-include
+	--without-iconv-include=${iconv-dir}/include
+	--with-iconv-lib
+	--without-iconv-lib=${iconv-dir}/lib
+	--with-xml2-dir
+	--without-xml2-dir
+	--with-xml2-include
+	--without-xml2-include=${xml2-dir}/include
+	--with-xml2-lib
+	--without-xml2-lib=${xml2-dir}/lib
+	--with-xslt-dir
+	--without-xslt-dir
+	--with-xslt-include
+	--without-xslt-include=${xslt-dir}/include
+	--with-xslt-lib
+	--without-xslt-lib=${xslt-dir}/lib
+	--with-libxslt-config
+	--without-libxslt-config
+	--with-pkg-config
+	--without-pkg-config
+	--with-libxml-2.0-config
+	--without-libxml-2.0-config
+	--with-pkg-config
+	--without-pkg-config
+	--with-libiconv-config
+	--without-libiconv-config
+	--with-pkg-config
+	--without-pkg-config
+
+
+Gem files will remain installed in c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/nokogiri-1.6.1 for inspection.
+Results logged to c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/nokogiri-1.6.1/ext/nokogiri/gem_make.out
+
+c:/Ruby200-x64/lib/ruby/2.0.0/rubygems/ext/builder.rb:62:in `run'  \nc:/Ruby200-x64/lib/ruby/2.0.0/rubygems/ext/ext_conf_builder.rb:39:in `block in build'  \nc:/Ruby200-x64/lib/ruby/2.0.0/tempfile.rb:324:in `open'  \nc:/Ruby200-x64/lib/ruby/2.0.0/rubygems/ext/ext_conf_builder.rb:19:in `build'  \nc:/Ruby200-x64/lib/ruby/2.0.0/rubygems/installer.rb:689:in `block (3 levels) in build_extensions'  \nc:/Ruby200-x64/lib/ruby/2.0.0/rubygems/installer.rb:688:in `chdir'  \nc:/Ruby200-x64/lib/ruby/2.0.0/rubygems/installer.rb:688:in `block (2 levels) in build_extensions'  \nc:/Ruby200-x64/lib/ruby/2.0.0/rubygems/installer.rb:687:in `synchronize'  \nc:/Ruby200-x64/lib/ruby/2.0.0/rubygems/installer.rb:687:in `block in build_extensions'  \nc:/Ruby200-x64/lib/ruby/2.0.0/rubygems/installer.rb:662:in `each'  \nc:/Ruby200-x64/lib/ruby/2.0.0/rubygems/installer.rb:662:in `build_extensions'  \nc:/Ruby200-x64/lib/ruby/2.0.0/rubygems/installer.rb:227:in `install'  \nc:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/bundler-1.5.1/lib/bundler/source/rubygems.rb:101:in `block in install'  \nc:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/bundler-1.5.1/lib/bundler/rubygems_integration.rb:118:in `preserve_paths'  \nc:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/bundler-1.5.1/lib/bundler/source/rubygems.rb:94:in `install'  \nc:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/bundler-1.5.1/lib/bundler/installer.rb:111:in `block in install_gem_from_spec'  \nc:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/bundler-1.5.1/lib/bundler/rubygems_integration.rb:150:in `with_build_args'  \nc:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/bundler-1.5.1/lib/bundler/installer.rb:110:in `install_gem_from_spec'  \nc:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/bundler-1.5.1/lib/bundler/installer.rb:295:in `block in install_sequentially'  \nc:/Ruby200-x64/lib/ruby/2.0.0/forwardable.rb:171:in `each'  \nc:/Ruby200-x64/lib/ruby/2.0.0/forwardable.rb:171:in `each'  \nc:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/bundler-1.5.1/lib/bundler/installer.rb:294:in `install_sequentially'  \nc:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/bundler-1.5.1/lib/bundler/installer.rb:97:in `run'  \nc:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/bundler-1.5.1/lib/bundler/installer.rb:15:in `install'  \nc:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/bundler-1.5.1/lib/bundler/cli.rb:257:in `install'  \nc:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/bundler-1.5.1/lib/bundler/vendor/thor/command.rb:27:in `run'  \nc:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/bundler-1.5.1/lib/bundler/vendor/thor/invocation.rb:120:in `invoke_command'  \nc:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/bundler-1.5.1/lib/bundler/vendor/thor.rb:363:in `dispatch'  \nc:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/bundler-1.5.1/lib/bundler/vendor/thor/base.rb:438:in `start'  \nc:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/bundler-1.5.1/lib/bundler/cli.rb:10:in `start'  \nc:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/bundler-1.5.1/bin/bundle:22:in `block in <top (required)>'  \nc:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/bundler-1.5.1/lib/bundler/friendly_errors.rb:5:in `with_friendly_errors'  \nc:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/bundler-1.5.1/bin/bundle:22:in `<top (required)>'  \nc:/Ruby200-x64/bin/bundle:23:in `load'  \nc:/Ruby200-x64/bin/bundle:23:in `<main>'
+I, [2014-04-08T08:34:49.522598 #4036]  INFO -- : 0:  rake (10.2.2) from c:/Ruby200-x64/lib/ruby/gems/2.0.0/specifications/rake-10.2.2.gemspec
+I, [2014-04-08T08:34:49.525564 #4036]  INFO -- : 0:  i18n (0.6.9) from c:/Ruby200-x64/lib/ruby/gems/2.0.0/specifications/i18n-0.6.9.gemspec
+I, [2014-04-08T08:34:49.527597 #4036]  INFO -- : 0:  minitest (4.7.5) from c:/Ruby200-x64/lib/ruby/gems/2.0.0/specifications/minitest-4.7.5.gemspec
+I, [2014-04-08T08:34:49.529597 #4036]  INFO -- : 0:  multi_json (1.9.2) from c:/Ruby200-x64/lib/ruby/gems/2.0.0/specifications/multi_json-1.9.2.gemspec
+I, [2014-04-08T08:34:51.674128 #4036]  INFO -- : 0:  thread_safe (0.3.3) from c:/Ruby200-x64/lib/ruby/gems/2.0.0/specifications/thread_safe-0.3.3.gemspec
+I, [2014-04-08T08:34:51.676128 #4036]  INFO -- : 0:  tzinfo (0.3.39) from c:/Ruby200-x64/lib/ruby/gems/2.0.0/specifications/tzinfo-0.3.39.gemspec
+I, [2014-04-08T08:34:51.678128 #4036]  INFO -- : 0:  activesupport (4.0.2) from c:/Ruby200-x64/lib/ruby/gems/2.0.0/specifications/activesupport-4.0.2.gemspec
+I, [2014-04-08T08:34:51.680088 #4036]  INFO -- : 0:  builder (3.1.4) from c:/Ruby200-x64/lib/ruby/gems/2.0.0/specifications/builder-3.1.4.gemspec
+I, [2014-04-08T08:34:51.683128 #4036]  INFO -- : 0:  erubis (2.7.0) from c:/Ruby200-x64/lib/ruby/gems/2.0.0/specifications/erubis-2.7.0.gemspec
+I, [2014-04-08T08:34:51.725130 #4036]  INFO -- : 0:  rack (1.5.2) from c:/Ruby200-x64/lib/ruby/gems/2.0.0/specifications/rack-1.5.2.gemspec
+I, [2014-04-08T08:34:51.728132 #4036]  INFO -- : 0:  rack-test (0.6.2) from c:/Ruby200-x64/lib/ruby/gems/2.0.0/specifications/rack-test-0.6.2.gemspec
+I, [2014-04-08T08:34:51.731100 #4036]  INFO -- : 0:  actionpack (4.0.2) from c:/Ruby200-x64/lib/ruby/gems/2.0.0/specifications/actionpack-4.0.2.gemspec
+I, [2014-04-08T08:34:51.733132 #4036]  INFO -- : 0:  mime-types (1.25.1) from c:/Ruby200-x64/lib/ruby/gems/2.0.0/specifications/mime-types-1.25.1.gemspec
+I, [2014-04-08T08:34:51.736133 #4036]  INFO -- : 0:  polyglot (0.3.4) from c:/Ruby200-x64/lib/ruby/gems/2.0.0/specifications/polyglot-0.3.4.gemspec
+I, [2014-04-08T08:34:51.739118 #4036]  INFO -- : 0:  treetop (1.4.15) from c:/Ruby200-x64/lib/ruby/gems/2.0.0/specifications/treetop-1.4.15.gemspec
+I, [2014-04-08T08:34:51.741132 #4036]  INFO -- : 0:  mail (2.5.4) from c:/Ruby200-x64/lib/ruby/gems/2.0.0/specifications/mail-2.5.4.gemspec
+I, [2014-04-08T08:34:51.743133 #4036]  INFO -- : 0:  actionmailer (4.0.2) from c:/Ruby200-x64/lib/ruby/gems/2.0.0/specifications/actionmailer-4.0.2.gemspec
+I, [2014-04-08T08:34:51.745131 #4036]  INFO -- : 0:  activemodel (4.0.2) from c:/Ruby200-x64/lib/ruby/gems/2.0.0/specifications/activemodel-4.0.2.gemspec
+I, [2014-04-08T08:34:51.747123 #4036]  INFO -- : 0:  activerecord-deprecated_finders (1.0.3) from c:/Ruby200-x64/lib/ruby/gems/2.0.0/specifications/activerecord-deprecated_finders-1.0.3.gemspec
+I, [2014-04-08T08:34:51.750131 #4036]  INFO -- : 0:  arel (4.0.2) from c:/Ruby200-x64/lib/ruby/gems/2.0.0/specifications/arel-4.0.2.gemspec
+I, [2014-04-08T08:34:51.752086 #4036]  INFO -- : 0:  activerecord (4.0.2) from c:/Ruby200-x64/lib/ruby/gems/2.0.0/specifications/activerecord-4.0.2.gemspec
+I, [2014-04-08T08:34:51.754085 #4036]  INFO -- : 0:  json (1.8.1) from c:/Ruby200-x64/lib/ruby/gems/2.0.0/specifications/json-1.8.1.gemspec
+I, [2014-04-08T08:34:51.756085 #4036]  INFO -- : 0:  mini_portile (0.5.3) from c:/Ruby200-x64/lib/ruby/gems/2.0.0/specifications/mini_portile-0.5.3.gemspec
+E, [2014-04-08T08:34:56.839424 #4036] ERROR -- : Gem::Installer::ExtensionBuildError: ERROR: Failed to build gem native extension.
+
+    c:/Ruby200-x64/bin/ruby.exe extconf.rb 
+checking for libxml/parser.h... no
+-----
+libxml2 is missing.  please visit http://nokogiri.org/tutorials/installing_nokogiri.html for help with installing dependencies.
+-----
+*** extconf.rb failed ***
+Could not create Makefile due to some reason, probably lack of necessary
+libraries and/or headers.  Check the mkmf.log file for more details.  You may
+need configuration options.
+
+Provided configuration options:
+	--with-opt-dir
+	--without-opt-dir
+	--with-opt-include
+	--without-opt-include=${opt-dir}/include
+	--with-opt-lib
+	--without-opt-lib=${opt-dir}/lib
+	--with-make-prog
+	--without-make-prog
+	--srcdir=.
+	--curdir
+	--ruby=c:/Ruby200-x64/bin/ruby
+	--with-zlib-dir
+	--without-zlib-dir
+	--with-zlib-include
+	--without-zlib-include=${zlib-dir}/include
+	--with-zlib-lib
+	--without-zlib-lib=${zlib-dir}/lib
+	--with-iconv-dir
+	--without-iconv-dir
+	--with-iconv-include
+	--without-iconv-include=${iconv-dir}/include
+	--with-iconv-lib
+	--without-iconv-lib=${iconv-dir}/lib
+	--with-xml2-dir
+	--without-xml2-dir
+	--with-xml2-include
+	--without-xml2-include=${xml2-dir}/include
+	--with-xml2-lib
+	--without-xml2-lib=${xml2-dir}/lib
+	--with-xslt-dir
+	--without-xslt-dir
+	--with-xslt-include
+	--without-xslt-include=${xslt-dir}/include
+	--with-xslt-lib
+	--without-xslt-lib=${xslt-dir}/lib
+	--with-libxslt-config
+	--without-libxslt-config
+	--with-pkg-config
+	--without-pkg-config
+	--with-libxml-2.0-config
+	--without-libxml-2.0-config
+	--with-pkg-config
+	--without-pkg-config
+	--with-libiconv-config
+	--without-libiconv-config
+	--with-pkg-config
+	--without-pkg-config
+
+
+Gem files will remain installed in c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/nokogiri-1.6.1 for inspection.
+Results logged to c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/nokogiri-1.6.1/ext/nokogiri/gem_make.out
+
+c:/Ruby200-x64/lib/ruby/2.0.0/rubygems/ext/builder.rb:62:in `run'  \nc:/Ruby200-x64/lib/ruby/2.0.0/rubygems/ext/ext_conf_builder.rb:39:in `block in build'  \nc:/Ruby200-x64/lib/ruby/2.0.0/tempfile.rb:324:in `open'  \nc:/Ruby200-x64/lib/ruby/2.0.0/rubygems/ext/ext_conf_builder.rb:19:in `build'  \nc:/Ruby200-x64/lib/ruby/2.0.0/rubygems/installer.rb:689:in `block (3 levels) in build_extensions'  \nc:/Ruby200-x64/lib/ruby/2.0.0/rubygems/installer.rb:688:in `chdir'  \nc:/Ruby200-x64/lib/ruby/2.0.0/rubygems/installer.rb:688:in `block (2 levels) in build_extensions'  \nc:/Ruby200-x64/lib/ruby/2.0.0/rubygems/installer.rb:687:in `synchronize'  \nc:/Ruby200-x64/lib/ruby/2.0.0/rubygems/installer.rb:687:in `block in build_extensions'  \nc:/Ruby200-x64/lib/ruby/2.0.0/rubygems/installer.rb:662:in `each'  \nc:/Ruby200-x64/lib/ruby/2.0.0/rubygems/installer.rb:662:in `build_extensions'  \nc:/Ruby200-x64/lib/ruby/2.0.0/rubygems/installer.rb:227:in `install'  \nc:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/bundler-1.5.1/lib/bundler/source/rubygems.rb:101:in `block in install'  \nc:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/bundler-1.5.1/lib/bundler/rubygems_integration.rb:118:in `preserve_paths'  \nc:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/bundler-1.5.1/lib/bundler/source/rubygems.rb:94:in `install'  \nc:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/bundler-1.5.1/lib/bundler/installer.rb:111:in `block in install_gem_from_spec'  \nc:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/bundler-1.5.1/lib/bundler/rubygems_integration.rb:150:in `with_build_args'  \nc:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/bundler-1.5.1/lib/bundler/installer.rb:110:in `install_gem_from_spec'  \nc:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/bundler-1.5.1/lib/bundler/installer.rb:295:in `block in install_sequentially'  \nc:/Ruby200-x64/lib/ruby/2.0.0/forwardable.rb:171:in `each'  \nc:/Ruby200-x64/lib/ruby/2.0.0/forwardable.rb:171:in `each'  \nc:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/bundler-1.5.1/lib/bundler/installer.rb:294:in `install_sequentially'  \nc:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/bundler-1.5.1/lib/bundler/installer.rb:97:in `run'  \nc:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/bundler-1.5.1/lib/bundler/installer.rb:15:in `install'  \nc:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/bundler-1.5.1/lib/bundler/cli.rb:257:in `install'  \nc:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/bundler-1.5.1/lib/bundler/vendor/thor/command.rb:27:in `run'  \nc:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/bundler-1.5.1/lib/bundler/vendor/thor/invocation.rb:120:in `invoke_command'  \nc:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/bundler-1.5.1/lib/bundler/vendor/thor.rb:363:in `dispatch'  \nc:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/bundler-1.5.1/lib/bundler/vendor/thor/base.rb:438:in `start'  \nc:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/bundler-1.5.1/lib/bundler/cli.rb:10:in `start'  \nc:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/bundler-1.5.1/bin/bundle:22:in `block in <top (required)>'  \nc:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/bundler-1.5.1/lib/bundler/friendly_errors.rb:5:in `with_friendly_errors'  \nc:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/bundler-1.5.1/bin/bundle:22:in `<top (required)>'  \nc:/Ruby200-x64/bin/bundle:23:in `load'  \nc:/Ruby200-x64/bin/bundle:23:in `<main>'
+I, [2014-04-08T08:36:57.582832 #2212]  INFO -- : 0:  rake (10.2.2) from c:/Ruby200-x64/lib/ruby/gems/2.0.0/specifications/rake-10.2.2.gemspec
+I, [2014-04-08T08:36:57.585824 #2212]  INFO -- : 0:  i18n (0.6.9) from c:/Ruby200-x64/lib/ruby/gems/2.0.0/specifications/i18n-0.6.9.gemspec
+I, [2014-04-08T08:36:57.587832 #2212]  INFO -- : 0:  minitest (4.7.5) from c:/Ruby200-x64/lib/ruby/gems/2.0.0/specifications/minitest-4.7.5.gemspec
+I, [2014-04-08T08:36:57.590832 #2212]  INFO -- : 0:  multi_json (1.9.2) from c:/Ruby200-x64/lib/ruby/gems/2.0.0/specifications/multi_json-1.9.2.gemspec
+I, [2014-04-08T08:36:57.592831 #2212]  INFO -- : 0:  thread_safe (0.3.3) from c:/Ruby200-x64/lib/ruby/gems/2.0.0/specifications/thread_safe-0.3.3.gemspec
+I, [2014-04-08T08:36:57.594833 #2212]  INFO -- : 0:  tzinfo (0.3.39) from c:/Ruby200-x64/lib/ruby/gems/2.0.0/specifications/tzinfo-0.3.39.gemspec
+I, [2014-04-08T08:36:57.598825 #2212]  INFO -- : 0:  activesupport (4.0.2) from c:/Ruby200-x64/lib/ruby/gems/2.0.0/specifications/activesupport-4.0.2.gemspec
+I, [2014-04-08T08:36:57.600833 #2212]  INFO -- : 0:  builder (3.1.4) from c:/Ruby200-x64/lib/ruby/gems/2.0.0/specifications/builder-3.1.4.gemspec
+I, [2014-04-08T08:36:57.602832 #2212]  INFO -- : 0:  erubis (2.7.0) from c:/Ruby200-x64/lib/ruby/gems/2.0.0/specifications/erubis-2.7.0.gemspec
+I, [2014-04-08T08:36:57.605832 #2212]  INFO -- : 0:  rack (1.5.2) from c:/Ruby200-x64/lib/ruby/gems/2.0.0/specifications/rack-1.5.2.gemspec
+I, [2014-04-08T08:36:57.607832 #2212]  INFO -- : 0:  rack-test (0.6.2) from c:/Ruby200-x64/lib/ruby/gems/2.0.0/specifications/rack-test-0.6.2.gemspec
+I, [2014-04-08T08:36:57.610827 #2212]  INFO -- : 0:  actionpack (4.0.2) from c:/Ruby200-x64/lib/ruby/gems/2.0.0/specifications/actionpack-4.0.2.gemspec
+I, [2014-04-08T08:36:57.612831 #2212]  INFO -- : 0:  mime-types (1.25.1) from c:/Ruby200-x64/lib/ruby/gems/2.0.0/specifications/mime-types-1.25.1.gemspec
+I, [2014-04-08T08:36:57.616832 #2212]  INFO -- : 0:  polyglot (0.3.4) from c:/Ruby200-x64/lib/ruby/gems/2.0.0/specifications/polyglot-0.3.4.gemspec
+I, [2014-04-08T08:36:57.618832 #2212]  INFO -- : 0:  treetop (1.4.15) from c:/Ruby200-x64/lib/ruby/gems/2.0.0/specifications/treetop-1.4.15.gemspec
+I, [2014-04-08T08:36:57.620832 #2212]  INFO -- : 0:  mail (2.5.4) from c:/Ruby200-x64/lib/ruby/gems/2.0.0/specifications/mail-2.5.4.gemspec
+I, [2014-04-08T08:36:57.623827 #2212]  INFO -- : 0:  actionmailer (4.0.2) from c:/Ruby200-x64/lib/ruby/gems/2.0.0/specifications/actionmailer-4.0.2.gemspec
+I, [2014-04-08T08:36:57.625832 #2212]  INFO -- : 0:  activemodel (4.0.2) from c:/Ruby200-x64/lib/ruby/gems/2.0.0/specifications/activemodel-4.0.2.gemspec
+I, [2014-04-08T08:36:57.627832 #2212]  INFO -- : 0:  activerecord-deprecated_finders (1.0.3) from c:/Ruby200-x64/lib/ruby/gems/2.0.0/specifications/activerecord-deprecated_finders-1.0.3.gemspec
+I, [2014-04-08T08:36:57.629831 #2212]  INFO -- : 0:  arel (4.0.2) from c:/Ruby200-x64/lib/ruby/gems/2.0.0/specifications/arel-4.0.2.gemspec
+I, [2014-04-08T08:36:57.632832 #2212]  INFO -- : 0:  activerecord (4.0.2) from c:/Ruby200-x64/lib/ruby/gems/2.0.0/specifications/activerecord-4.0.2.gemspec
+I, [2014-04-08T08:36:59.157965 #2212]  INFO -- : 0:  bcrypt (3.1.7) from c:/Ruby200-x64/lib/ruby/gems/2.0.0/specifications/bcrypt-3.1.7-x64-mingw32.gemspec
+I, [2014-04-08T08:36:59.160932 #2212]  INFO -- : 0:  sass (3.2.19) from c:/Ruby200-x64/lib/ruby/gems/2.0.0/specifications/sass-3.2.19.gemspec
+I, [2014-04-08T08:37:02.548654 #2212]  INFO -- : 0:  bootstrap-sass (3.1.1.0) from c:/Ruby200-x64/lib/ruby/gems/2.0.0/specifications/bootstrap-sass-3.1.1.0.gemspec
+I, [2014-04-08T08:37:02.551636 #2212]  INFO -- : 0:  bundler (1.5.1) from c:/Ruby200-x64/lib/ruby/gems/2.0.0/specifications/bundler-1.5.1.gemspec
+I, [2014-04-08T08:37:02.553656 #2212]  INFO -- : 0:  climate_control (0.0.3) from c:/Ruby200-x64/lib/ruby/gems/2.0.0/specifications/climate_control-0.0.3.gemspec
+I, [2014-04-08T08:37:04.236833 #2212]  INFO -- : 0:  cocaine (0.5.4) from c:/Ruby200-x64/lib/ruby/gems/2.0.0/specifications/cocaine-0.5.4.gemspec
+I, [2014-04-08T08:37:04.240789 #2212]  INFO -- : 0:  coffee-script-source (1.7.0) from c:/Ruby200-x64/lib/ruby/gems/2.0.0/specifications/coffee-script-source-1.7.0.gemspec
+I, [2014-04-08T08:37:04.251790 #2212]  INFO -- : 0:  execjs (2.0.2) from c:/Ruby200-x64/lib/ruby/gems/2.0.0/specifications/execjs-2.0.2.gemspec
+I, [2014-04-08T08:37:04.254834 #2212]  INFO -- : 0:  coffee-script (2.2.0) from c:/Ruby200-x64/lib/ruby/gems/2.0.0/specifications/coffee-script-2.2.0.gemspec
+I, [2014-04-08T08:37:04.256834 #2212]  INFO -- : 0:  thor (0.19.1) from c:/Ruby200-x64/lib/ruby/gems/2.0.0/specifications/thor-0.19.1.gemspec
+I, [2014-04-08T08:37:04.259835 #2212]  INFO -- : 0:  railties (4.0.2) from c:/Ruby200-x64/lib/ruby/gems/2.0.0/specifications/railties-4.0.2.gemspec
+I, [2014-04-08T08:37:04.262833 #2212]  INFO -- : 0:  coffee-rails (4.0.1) from c:/Ruby200-x64/lib/ruby/gems/2.0.0/specifications/coffee-rails-4.0.1.gemspec
+I, [2014-04-08T08:37:04.278804 #2212]  INFO -- : 0:  orm_adapter (0.5.0) from c:/Ruby200-x64/lib/ruby/gems/2.0.0/specifications/orm_adapter-0.5.0.gemspec
+I, [2014-04-08T08:37:04.280833 #2212]  INFO -- : 0:  warden (1.2.3) from c:/Ruby200-x64/lib/ruby/gems/2.0.0/specifications/warden-1.2.3.gemspec
+I, [2014-04-08T08:37:10.353857 #2212]  INFO -- : 0:  devise (3.2.4) from c:/Ruby200-x64/lib/ruby/gems/2.0.0/specifications/devise-3.2.4.gemspec
+I, [2014-04-08T08:37:10.356837 #2212]  INFO -- : 0:  hike (1.2.3) from c:/Ruby200-x64/lib/ruby/gems/2.0.0/specifications/hike-1.2.3.gemspec
+I, [2014-04-08T08:37:10.359824 #2212]  INFO -- : 0:  jbuilder (1.5.3) from c:/Ruby200-x64/lib/ruby/gems/2.0.0/specifications/jbuilder-1.5.3.gemspec
+I, [2014-04-08T08:37:10.366823 #2212]  INFO -- : 0:  jquery-rails (3.1.0) from c:/Ruby200-x64/lib/ruby/gems/2.0.0/specifications/jquery-rails-3.1.0.gemspec
+I, [2014-04-08T08:37:10.368836 #2212]  INFO -- : 0:  json (1.8.1) from c:/Ruby200-x64/lib/ruby/gems/2.0.0/specifications/json-1.8.1.gemspec
+I, [2014-04-08T08:37:13.597112 #2212]  INFO -- : 0:  paperclip (4.1.1) from c:/Ruby200-x64/lib/ruby/gems/2.0.0/specifications/paperclip-4.1.1.gemspec
+I, [2014-04-08T08:37:13.600111 #2212]  INFO -- : 0:  pg (0.17.1) from c:/Ruby200-x64/lib/ruby/gems/2.0.0/specifications/pg-0.17.1-x64-mingw32.gemspec
+I, [2014-04-08T08:37:15.204563 #2212]  INFO -- : 0:  protected_attributes (1.0.7) from c:/Ruby200-x64/lib/ruby/gems/2.0.0/specifications/protected_attributes-1.0.7.gemspec
+I, [2014-04-08T08:37:15.206614 #2212]  INFO -- : 0:  tilt (1.4.1) from c:/Ruby200-x64/lib/ruby/gems/2.0.0/specifications/tilt-1.4.1.gemspec
+I, [2014-04-08T08:37:15.208610 #2212]  INFO -- : 0:  sprockets (2.11.0) from c:/Ruby200-x64/lib/ruby/gems/2.0.0/specifications/sprockets-2.11.0.gemspec
+I, [2014-04-08T08:37:15.210611 #2212]  INFO -- : 0:  sprockets-rails (2.0.1) from c:/Ruby200-x64/lib/ruby/gems/2.0.0/specifications/sprockets-rails-2.0.1.gemspec
+I, [2014-04-08T08:37:15.212610 #2212]  INFO -- : 0:  rails (4.0.2) from c:/Ruby200-x64/lib/ruby/gems/2.0.0/specifications/rails-4.0.2.gemspec
+I, [2014-04-08T08:37:15.215609 #2212]  INFO -- : 0:  rails_serve_static_assets (0.0.2) from c:/Ruby200-x64/lib/ruby/gems/2.0.0/specifications/rails_serve_static_assets-0.0.2.gemspec
+I, [2014-04-08T08:37:15.217577 #2212]  INFO -- : 0:  rails_stdout_logging (0.0.3) from c:/Ruby200-x64/lib/ruby/gems/2.0.0/specifications/rails_stdout_logging-0.0.3.gemspec
+I, [2014-04-08T08:37:15.220565 #2212]  INFO -- : 0:  rails_12factor (0.0.2) from c:/Ruby200-x64/lib/ruby/gems/2.0.0/specifications/rails_12factor-0.0.2.gemspec
+I, [2014-04-08T08:37:17.171008 #2212]  INFO -- : 0:  rails_layout (1.0.13) from c:/Ruby200-x64/lib/ruby/gems/2.0.0/specifications/rails_layout-1.0.13.gemspec
+I, [2014-04-08T08:37:17.173015 #2212]  INFO -- : 0:  rdoc (4.1.1) from c:/Ruby200-x64/lib/ruby/gems/2.0.0/specifications/rdoc-4.1.1.gemspec
+I, [2014-04-08T08:37:17.175991 #2212]  INFO -- : 0:  sass-rails (4.0.3) from c:/Ruby200-x64/lib/ruby/gems/2.0.0/specifications/sass-rails-4.0.3.gemspec
+I, [2014-04-08T08:37:17.178017 #2212]  INFO -- : 0:  sdoc (0.4.0) from c:/Ruby200-x64/lib/ruby/gems/2.0.0/specifications/sdoc-0.4.0.gemspec
+I, [2014-04-08T08:37:17.179968 #2212]  INFO -- : 0:  sqlite3 (1.3.9) from c:/Ruby200-x64/lib/ruby/gems/2.0.0/specifications/sqlite3-1.3.9-x64-mingw32.gemspec
+I, [2014-04-08T08:37:18.589742 #2212]  INFO -- : 0:  turbolinks (2.2.2) from c:/Ruby200-x64/lib/ruby/gems/2.0.0/specifications/turbolinks-2.2.2.gemspec
+I, [2014-04-08T08:37:18.591788 #2212]  INFO -- : 0:  uglifier (2.5.0) from c:/Ruby200-x64/lib/ruby/gems/2.0.0/specifications/uglifier-2.5.0.gemspec

@@ -11,5 +11,6 @@ class CreateStories < ActiveRecord::Migration
     end
     
     add_index :stories, :artist_id
+    add_index :stories, :client_id
   end
 end

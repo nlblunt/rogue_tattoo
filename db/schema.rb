@@ -67,10 +67,12 @@ ActiveRecord::Schema.define(version: 20140126061848) do
     t.text     "description"
     t.date     "date"
     t.integer  "artist_id"
+    t.integer  "client_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
   add_index "stories", ["artist_id"], name: "index_stories_on_artist_id"
+  add_index "stories", ["client_id"], name: "index_stories_on_client_id"
 
 end
