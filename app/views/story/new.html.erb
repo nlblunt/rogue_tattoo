@@ -17,11 +17,9 @@
         
         <div class="form-group">
         	<label>Tattoo Artist</label>
-        	<select class="form-control">
-        		<% @artists.each do |artist| %>
-        			<option><%= artist.name %></option>
-        		<% end %>
-        	</select>
+        	<%= s.select(:artist_id), class: 'form-control' %>
+        		<%= options_from_collection_for_select(Artist.all, :id, :name) %>   			
+        	<% end %>
         </div>>
         	
         	
