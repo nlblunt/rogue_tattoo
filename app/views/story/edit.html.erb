@@ -1,2 +1,6 @@
 <h1>Story#edit</h1>
-<p>Find me in app/views/story/edit.html.erb</p>
+
+                
+    <% @images.each do |image| %>
+        <%= image_tag image.img.url(:medium) %>
+    <% end %>

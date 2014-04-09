@@ -15,3 +15,10 @@
 //= require turbolinks
 //= require bootstrap
 //= require_tree .
+var counter = 1;
+function addInput(divName){
+  var newdiv = document.createElement('div');
+  newdiv.innerHTML = "<label>Choose Image</label><input id='story_img' name='story[img][]' type='file' />"; //"Task Name <input type='text' name='task[name][]'>";
+  document.getElementById(divName).appendChild(newdiv);
+  counter++;
+}
