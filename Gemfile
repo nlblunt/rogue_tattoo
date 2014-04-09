@@ -7,6 +7,7 @@ gem 'bootstrap-sass'
 
 gem 'paperclip'
 
+
 # Use sqlite3 as the database for Active Record
 group :production do
   gem 'pg'
