@@ -7,6 +7,8 @@ class StoryController < ApplicationController
 
   def create
       @story = Story.new(params[:story])
+      @story.save
+      
       @artists = Artist.all
       
       if(params[:story][:img] != nil)
@@ -19,9 +21,9 @@ class StoryController < ApplicationController
          count = count + 1
          end
       end
-      @story.save
+
       
-      redirect_to 'welcome#dashboard'
+      redirect_to welcome_dashboard_path
   end
   
   def edit
