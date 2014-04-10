@@ -8,6 +8,7 @@ RogueTattoo::Application.routes.draw do
   resources :artist
   resources :client
   resources :story
+  resources :image
   
   devise_for :admins
   

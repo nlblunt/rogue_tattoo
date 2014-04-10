@@ -3,6 +3,6 @@
 	</div>
 
             
-    <% @images.each do |image| %>
-        <%= image_tag image.img.url(:medium) %>
+    <% @story.images.each do |image| %>
+         <%= image_tag image.img.url(:medium) %>
     <% end %>
