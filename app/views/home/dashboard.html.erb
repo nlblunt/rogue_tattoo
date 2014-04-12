@@ -16,7 +16,7 @@
                 
                 <% @clients.each do |client| %>
                 <tr>
-                    <td><%= client.name %></td>
+                    <td><%= client.lastname %>, <%= client.firstname %></td>
                     <td><%= link_to "View & Edit", edit_client_path(client) %></td>
                     <td><%= link_to "Add new tattoo story", new_story_path(:c_id => client.id) %></td>
                     <td><%= link_to "Delete", client_path(client), method: :delete %></td>

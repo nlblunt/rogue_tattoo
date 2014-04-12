@@ -24,7 +24,7 @@ class StoryController < ApplicationController
       end
 
       
-      redirect_to welcome_dashboard_path
+      redirect_to dashboard_path
   end
   
   def edit
@@ -48,7 +48,14 @@ class StoryController < ApplicationController
          @image.save
          count = count + 1
          end
-      end
+        end
+      
+        id = 0
+        params[:story][:images_attributes].values.each do |img|
+            @image = Image.find(img[:id])
+            @image.display = img[:display]
+            @image.save
+        end
      redirect_to edit_client_path(@story.client_id)
   end
 end

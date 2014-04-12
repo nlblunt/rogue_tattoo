@@ -44,13 +44,14 @@ ActiveRecord::Schema.define(version: 20140126061848) do
   end
 
   create_table "clients", force: true do |t|
-    t.string   "name"
+    t.string   "lastname"
+    t.string   "firstname"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
   create_table "images", force: true do |t|
-    t.string   "filename"
+    t.boolean  "display"
     t.integer  "story_id"
     t.string   "img_file_name"
     t.string   "img_content_type"
@@ -66,6 +67,7 @@ ActiveRecord::Schema.define(version: 20140126061848) do
     t.string   "title"
     t.text     "description"
     t.date     "date"
+    t.boolean  "featured"
     t.integer  "artist_id"
     t.integer  "client_id"
     t.datetime "created_at"

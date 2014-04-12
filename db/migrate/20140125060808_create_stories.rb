@@ -4,6 +4,7 @@ class CreateStories < ActiveRecord::Migration
       t.string :title
       t.text :description
       t.date :date
+      t.boolean :featured
       t.references :artist
       t.references :client
       
