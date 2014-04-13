@@ -2,7 +2,55 @@
 	<h1>Edit <%= @story.title %></h1>
 	</div>
 
-            
-    <% @story.images.each do |image| %>
-         <%= image_tag image.img.url(:medium) %>
-    <% end %>
+        <%= form_for @story, url: story_path, :html => { :multipart => true }, method: :patch do |s| %>
+        <div class="form-group">
+            <label>Title</label>
+            <%= s.text_field :title, class: 'form-control' %>
+        </div>
+
+        <div class='form-group'>
+            <label>Description</label>
+            <%= s.text_area :description, class: 'form-control' %>
+        </div>
+        
+        <div class="form-group">
+        	<label>Tattoo Artist</label>
+        	<%= collection_select(:story, :artist_id, Artist.all, :id, :name) %>
+        	<% # s.select(:artist_id) %>
+        	<%= options_from_collection_for_select(Artist.all, :id, :name) %>   			
+        </div>
+        	
+     
+        <div class="form-group">
+        <table class="text-center table-bordered">
+        <tr>
+        <%= s.fields_for :images do |i| %>
+                <td class="text-center">
+                    <%=link_to image_tag(i.object.img.url(:thumb)), i.object.img.url(:medium), :popup=>['original_image', 'height=300,width=300'], class: 'img-thumbnail' %><br>
+                    <%= i.check_box :display %> Display<br>
+                    <%= check_box_tag 'delete_id[]', i.object.id %> Delete
+                </td>
+        <% end %>       
+        </tr>
+        </table>
+        <br>
+        
+        <div class="form-group">
+
+        <div id="dynamicInput" class='form-group'>
+            <label>Add additional Images</label>
+            <input id='story_img' name='story[img][]' type='file' />
+        </div>
+        
+        <input type="button" value="Add More Images" onClick="addInput('dynamicInput');">
+        </div>
+        </div>
+
+
+
+        <div class='form-group'>
+            <%= s.submit %>
+        </div>
+                <% end %>
+    </div>
+</div>
