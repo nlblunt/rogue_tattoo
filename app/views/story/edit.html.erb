@@ -20,35 +20,29 @@
         	<%= options_from_collection_for_select(Artist.all, :id, :name) %>   			
         </div>
         	
-        	
-
-        
-
      
-        <div class="panel">
+        <div class="form-group">
         <table class="text-center table-bordered">
         <tr>
         <%= s.fields_for :images do |i| %>
                 <td class="text-center">
-                    <%= i.text_field :story_id %>
-                    <%= i.check_box :display %>
                     <%=link_to image_tag(i.object.img.url(:thumb)), i.object.img.url(:medium), :popup=>['original_image', 'height=300,width=300'], class: 'img-thumbnail' %><br>
+                    <%= i.check_box :display %> Display<br>
                     <%= check_box_tag 'delete_id[]', i.object.id %> Delete
-                    <%#link_to "Delete", image_path(i.object), method: :delete %><br>
-                    <%= check_box 'i', 'display', {}, 'true', 'false' %> disp2
-                    <%= check_box_tag 'image[display][]', i.object.display %> Display
                 </td>
         <% end %>       
         </tr>
         </table>
         <br>
         
-        <div class="row">
-        <input type="button" value="Add More Images" onClick="addInput('dynamicInput');">
+        <div class="form-group">
+
         <div id="dynamicInput" class='form-group'>
             <label>Add additional Images</label>
             <input id='story_img' name='story[img][]' type='file' />
         </div>
+        
+        <input type="button" value="Add More Images" onClick="addInput('dynamicInput');">
         </div>
         </div>
 

@@ -3,6 +3,7 @@ class StoryController < ApplicationController
       @story = Story.new
       @client = Client.find(params[:c_id])
       @artists = Artist.all
+      @image = Image.new
   end
 
   def create
@@ -14,7 +15,7 @@ class StoryController < ApplicationController
       if(params[:story][:img] != nil)
          count = 0
          params[:story][:img].each do 
-             @image = @story.images.create(img: params[:story][:img][count])
+         @image = @story.images.create(img: params[:story][:img][count])
          #@image = Image.new
          #@image.story_id = @story.id
          #@image.img = params[:story][:img][count]
@@ -35,7 +36,7 @@ class StoryController < ApplicationController
   end
   
   def update
-     @story = Story.find(params[:story_id]) 
+     @story = Story.find(params[:id]) 
      @story.update(params[:story])
      
          if(params[:story][:img] != nil)
@@ -56,6 +57,16 @@ class StoryController < ApplicationController
             @image.display = img[:display]
             @image.save
         end
+        
+        if(params[:delete_id] != nil)
+            count = 0
+            params[:delete_id].each do
+                @image = Image.find(params[:delete_id][count])
+                @image.destroy
+                count = count + 1
+            end
+        end
+     
      redirect_to edit_client_path(@story.client_id)
   end
 end
