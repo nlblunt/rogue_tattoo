@@ -2,6 +2,18 @@ class HomeController < ApplicationController
   def index
       @artists = Artist.all
       @clients = Client.all
+      @images = Images.where(display: '1')
+      
+    if(@images.count > 0)
+        @url = Array.new()
+        (0..8).each do |i|
+            @image = Images.order_by_rand.limit(1).where(:display)
+            @url.push(@image.url(:small))
+        end
+    else
+        @url = Array.new(8, "logo.jpg")
+    end
+    
   end
   
   def dashboard

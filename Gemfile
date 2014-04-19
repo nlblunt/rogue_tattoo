@@ -9,6 +9,7 @@ gem 'bootstrap-sass'
 
 gem 'paperclip'
 
+gem 'randumb'
 
 # Use sqlite3 as the database for Active Record
 group :production do
