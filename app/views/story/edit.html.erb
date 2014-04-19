@@ -17,7 +17,7 @@
         	<label>Tattoo Artist</label>
         	<%= collection_select(:story, :artist_id, Artist.all, :id, :name) %>
         	<% # s.select(:artist_id) %>
-        	<%= options_from_collection_for_select(Artist.all, :id, :name) %>   			
+        	<% options_from_collection_for_select(Artist.all, :id, :name) %>   			
         </div>
         	
      

@@ -25,7 +25,7 @@ class StoryController < ApplicationController
       end
 
       
-      redirect_to dashboard_path
+      redirect_to edit_story_path(@story)
   end
   
   def edit
