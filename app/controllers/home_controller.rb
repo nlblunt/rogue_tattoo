@@ -8,7 +8,7 @@ class HomeController < ApplicationController
         @url = Array.new()
         (0..8).each do |i|
             @image = Images.order_by_rand.limit(1).where(display: 'true')
-            @url.push(@image.url(:small))
+            @url.push(@image.img.url(:small))
         end
     else
         @url = Array.new(8, "logo.jpg")
