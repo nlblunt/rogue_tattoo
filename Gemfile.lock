@@ -76,7 +76,7 @@ GEM
     nokogiri (1.6.1-x86-mingw32)
       mini_portile (~> 0.5.0)
     orm_adapter (0.5.0)
-    paperclip (4.1.1)
+    paperclip (4.1.0)
       activemodel (>= 3.0.0)
       activesupport (>= 3.0.0)
       cocaine (~> 0.5.3)
@@ -165,7 +165,7 @@ DEPENDENCIES
   devise
   jbuilder (~> 1.2)
   jquery-rails
-  paperclip
+  paperclip (= 4.1.0)
   pg
   protected_attributes
   rails (= 4.0.2)

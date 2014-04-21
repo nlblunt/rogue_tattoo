@@ -28,5 +28,5 @@ RogueTattoo::Application.configure do
   config.assets.debug = true
   
   #Paperclip.options[:command_path] = "/var/lib/stickshift/52dd36fc4382ecc55600001c/app-root/data/.nada-nix-profile/bin/"
-  #Paperclip.options[:command_path] = "/Program Files/ImageMagick-6.8.8-Q16"
+  #Paperclip.options[:command_path] = "/Program Files/ImageMagick-6.8.8-Q16/"
 end
