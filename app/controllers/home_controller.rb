@@ -7,7 +7,7 @@ class HomeController < ApplicationController
     if(@images.count > 0)
         @url = Array.new()
         (0..8).each do |i|
-            @image = Images.order_by_rand.limit(1).where(:display)
+            @image = Images.order_by_rand.limit(1).where(display: 'true')
             @url.push(@image.url(:small))
         end
     else
