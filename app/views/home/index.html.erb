@@ -1,20 +1,21 @@
+<body class="body-main">
 <div class="container">
     <div class="row">
         <div class="col-md-4 visible-md visible-lg">
             <div class="row">
                 <div class="col-md-6">
-                    <%= image_tag @url[0] %>
+                    <%= image_tag @url[0], class: "homeimage" %>
                 </div>
                 <div class="col-md-6">
-                    <%= image_tag "logo.jpg" %>
+                    <%= image_tag @url[1], class: "homeimage"  %>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-6">
-                    <%= image_tag "logo.jpg" %>
+                    <%= image_tag @url[2], class: "homeimage"  %>
                 </div>
                 <div class="col-md-6">
-                    <%= image_tag "logo.jpg" %>
+                    <%= image_tag @url[3], class: "homeimage"  %>
                 </div>                
             </div>
         </div>
@@ -24,20 +25,38 @@
         <div class="col-md-4 visible-md visible-lg">
             <div class="row">
                 <div class="col-md-6">
-                    <%= image_tag "logo.jpg" %>
+                    <%= image_tag @url[4], class: "homeimage"  %>
                 </div>
                 <div class="col-md-6">
-                    <%= image_tag "logo.jpg" %>
+                    <%= image_tag @url[5], class: "homeimage"  %>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-6">
-                    <%= image_tag "logo.jpg" %>
+                    <%= image_tag @url[6], class: "homeimage"  %>
                 </div>
                 <div class="col-md-6">
-                    <%= image_tag "logo.jpg" %>
+                    <%= image_tag @url[7], class: "homeimage"  %>
                 </div>                
             </div>
         </div>
     </div>
+    
+    <div class="row">
+        <h1 class="text-center">Featured Tattoo Jobs</h1>
+        
+        <% @stories.each do |story| %>
+            <div class="text-center"><%= story.description %></div>
+            <table class="text-center">
+                    <% story.images.each do |i| %>
+                    <div class="text-center">
+                    <td>
+                        <%= image_tag(i.img.url(:thumb)) %>
+                    </td>
+                    </div>
+                    <% end %>
+            </table>
+        <% end %>
+    </div>
 </div>
+</body>

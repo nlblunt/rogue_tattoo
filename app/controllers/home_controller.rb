@@ -2,15 +2,16 @@ class HomeController < ApplicationController
   def index
       @artists = Artist.all
       @clients = Client.all
-      @images = Images.where(display: '1')
+      @images = Image.where(display: true)
+      @stories = Story.where(featured: true)
       
+
     if(@images.count > 0)
         @url = Array.new()
         (0..8).each do |i|
-            #@image = Images.order_by_rand.limit(1).where(display: 'true')
-            @image = Images.where(display: 'true')
-            @image = @image.order_by_rand.limit(1)
-            @url.push(@image.img.url(:small))
+            loc = rand(@images.count)
+
+            @url.push(@images[loc].img.url(:medium))
         end
     else
         @url = Array.new(8, "logo.jpg")

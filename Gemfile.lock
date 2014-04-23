@@ -165,7 +165,7 @@ DEPENDENCIES
   devise
   jbuilder (~> 1.2)
   jquery-rails
-  paperclip (= 4.1.0)
+  paperclip
   pg
   protected_attributes
   rails (= 4.0.2)
