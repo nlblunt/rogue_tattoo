@@ -35,7 +35,9 @@ class ArtistController < ApplicationController
     end
 
     def show
-        
+        @artist = Artist.find(params[:id])
+        @images = Image.where(artist_id: @artist)
+        logger.debug @images.count
     end
     
     def artist_params

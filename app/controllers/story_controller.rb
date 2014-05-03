@@ -16,6 +16,8 @@ class StoryController < ApplicationController
          count = 0
          params[:story][:img].each do 
          @image = @story.images.create(img: params[:story][:img][count])
+         @image.artist_id = params[:story][:artist_id]
+         logger.debug @image.artist_id
          @image.save
          count = count + 1
          end
@@ -38,6 +40,7 @@ class StoryController < ApplicationController
          count = 0
          params[:story][:img].each do 
              @image = @story.images.create(img: params[:story][:img][count])
+             @image.artist_id = params[:story][:artist_id]
          @image.save
          count = count + 1
          end

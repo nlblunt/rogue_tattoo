@@ -8,15 +8,15 @@ class HomeController < ApplicationController
 
     if(@images.count > 0)
         @url = Array.new()
-        (0..8).each do |i|
+        (0..15).each do |i|
             loc = rand(@images.count)
 
             @url.push(@images[loc].img.url(:medium))
         end
     else
-        @url = Array.new(8, "logo.jpg")
+        @url = Array.new(12, "logo.jpg")
     end
-    
+        gon.url = @url
   end
   
   def dashboard

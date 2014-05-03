@@ -1,0 +1,28 @@
+<body class="body-main">
+<div class = "row">
+    <div class="col-md-4">
+        <%= image_tag(@artist.avatar.url(:medium)) %>        
+    </div>
+    
+    <div class="col-md-8">
+        <h2>
+            <%= @artist.name %>    
+        </h2>
+
+        <div>
+            <%= @artist.bio %>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="row">
+<h1 class="text-center">Tattoos created by <%= @artist.name %></h1>
+<table>
+    <% @images.each do |img| %>
+        <td class='img-thumbnail'><%= image_tag(img.img.url(:thumb)) %></td>
+    <% end %>
+</table>
+</div>
+</body>

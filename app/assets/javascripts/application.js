@@ -15,6 +15,10 @@
 //= require turbolinks
 //= require bootstrap
 //= require_tree .
+//= require prefixfree.min
+//= require 3dcarousel
+//= require demo
+
 var counter = 1;
 function addInput(divName){
   var newdiv = document.createElement('div');

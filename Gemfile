@@ -11,6 +11,8 @@ gem 'paperclip'
 
 gem 'randumb'
 
+gem 'gon'
+
 # Use sqlite3 as the database for Active Record
 group :production do
   gem 'pg'

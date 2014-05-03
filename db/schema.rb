@@ -53,6 +53,7 @@ ActiveRecord::Schema.define(version: 20140126061848) do
   create_table "images", force: true do |t|
     t.boolean  "display"
     t.integer  "story_id"
+    t.integer  "artist_id"
     t.string   "img_file_name"
     t.string   "img_content_type"
     t.integer  "img_file_size"
@@ -61,6 +62,7 @@ ActiveRecord::Schema.define(version: 20140126061848) do
     t.datetime "updated_at"
   end
 
+  add_index "images", ["artist_id"], name: "index_images_on_artist_id"
   add_index "images", ["story_id"], name: "index_images_on_story_id"
 
   create_table "stories", force: true do |t|
