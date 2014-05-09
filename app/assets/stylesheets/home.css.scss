@@ -4,7 +4,7 @@
 .body-main
 {
     background-color: #000000;
-    background:image-url("logo-bg.jpg");
+    background-image: url(image_path("logo-bg.jpg"));
     background-size: 100% 100%;
     background-repeat:no-repeat;
     background-position: center center;
