@@ -67,8 +67,8 @@
                 <% @newsposts.each do |news| %>
                 <tr>
                     <td><%= link_to news.heading, edit_newspost_path(news) %></td>
-                    <td><%= news.start.to_date %></td>
-                    <td><%= news.end.to_date %></td>
+                    <td><%= news.start_date.to_date %></td>
+                    <td><%= news.end_date.to_date %></td>
                     <td><%= link_to "Remove", newspost_path(news), method: :delete %></td>
                 </tr>
                 <% end %>

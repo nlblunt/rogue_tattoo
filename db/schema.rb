@@ -68,8 +68,8 @@ ActiveRecord::Schema.define(version: 20140507003622) do
   create_table "newsposts", force: true do |t|
     t.text     "heading"
     t.text     "body"
-    t.datetime "start"
-    t.datetime "end"
+    t.datetime "start_date"
+    t.datetime "end_date"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

@@ -6,7 +6,7 @@ class HomeController < ApplicationController
       @stories = Story.where(featured: true)
       
       @date = Date.today
-      @news = Newspost.where("DATE(?) BETWEEN start AND end", @date)
+      @news = Newspost.where("DATE(?) BETWEEN start_date AND end_date", @date)
 
     if(@images.count > 0)
         @url = Array.new()
@@ -20,8 +20,8 @@ class HomeController < ApplicationController
             @art.push(@artname.name)
         end
     else
-        @url = Array.new(5, "logo.jpg")
-        @art = Array.new(5, "Logo")
+        @url = Array.new(6, "logo.jpg")
+        @art = Array.new(6, "Logo")
     end
         gon.url = @url
   end

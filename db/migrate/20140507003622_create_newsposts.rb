@@ -3,8 +3,8 @@ class CreateNewsposts < ActiveRecord::Migration
     create_table :newsposts do |t|
       t.text :heading
       t.text :body
-      t.datetime :start
-      t.datetime :end
+      t.datetime :start_date
+      t.datetime :end_date
 
       t.timestamps
     end
