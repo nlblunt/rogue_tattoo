@@ -13,6 +13,10 @@ img {
   font-size: inherit;
   }
 
+.navbar-color
+{
+    background-color: #000000;
+}
 .dropdown-menu>li>a
 {
     color:white;
@@ -43,7 +47,7 @@ main {
   //background-color: #000000;
   //padding-bottom: 80px;
   width: 100%;
-  margin-top: 40px; // accommodate the navbar
+  //margin-top: 40px; // accommodate the navbar
   }
 section {
   @extend .row;

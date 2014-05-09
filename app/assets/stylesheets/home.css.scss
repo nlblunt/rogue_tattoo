@@ -4,7 +4,7 @@
 .body-main
 {
     background-color: #000000;
-    background-image:url("admin_bg.jpg");
+    background-image:url("logo-bg.jpg");
     background-size: 100% 100%;
     background-repeat:no-repeat;
     background-position: center center;
@@ -15,6 +15,28 @@
 .homeimage
 {
     width: auto;
-    height: 200px;
-    margin: 0;
+    height: auto;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.homeimageloc
+{
+    position:fixed;
+    bottom:50px;
+    left:0px;
+    right:auto;
+    
+}
+.panel-home
+{
+    background-color:rgba(0,0,0,0.5);
+    height: auto;
+    max-height:75%;
+}
+
+.nav-image
+{
+    height: auto;
+    width: 100px;
 }

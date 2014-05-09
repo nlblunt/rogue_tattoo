@@ -21,7 +21,7 @@
 <h1 class="text-center">Tattoos created by <%= @artist.name %></h1>
 <table>
     <% @images.each do |img| %>
-        <td class='img-thumbnail'><%= image_tag(img.img.url(:thumb)) %></td>
+        <td class='img-thumbnail'><%= link_to image_tag(img.img.url(:thumb)), img.img.url(:medium) %></td>
     <% end %>
 </table>
 </div>

@@ -53,6 +53,30 @@
             <%= link_to "Add new Tattoo Artist", new_artist_path %>
         </div>
         </panel>
+        
+        <panel class="panel panel-default">
+            <h3 class="text-center">Homepage News</h3>
+            <table class="table table-striped table-border">
+                <tr>
+                    <th>Heading</th>
+                    <th>Start Date</th>
+                    <th>End Date</th>
+                    <th>Remove</th>
+                </tr>
+                
+                <% @newsposts.each do |news| %>
+                <tr>
+                    <td><%= link_to news.heading, edit_newspost_path(news) %></td>
+                    <td><%= news.start.to_date %></td>
+                    <td><%= news.end.to_date %></td>
+                    <td><%= link_to "Remove", newspost_path(news), method: :delete %></td>
+                </tr>
+                <% end %>
+            </table>
+            <div class="text-center">
+                <%= link_to "Add News", new_newspost_path %>
+            </div>
+        </panel>
     </div>
     
     

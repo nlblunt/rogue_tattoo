@@ -28,7 +28,10 @@ class ArtistController < ApplicationController
     def destroy
         #destroy the artist.  also destroys any avatar images
       @artist = Artist.find(params[:id])
-      @artist.destroy
+      
+      if((@artist.name != 'Josh') or (@artist.name != 'Josh Ludlow'))
+        @artist.destroy
+      end
       
       
       redirect_to dashboard_path

@@ -1,0 +1,37 @@
+Add new news
+<div class='row'>
+    <div class='col-md-6'>
+        
+        <%= form_for @newspost, url: newspost_index_path, :html => { :multipart => true } do |a| %>
+        <div class="form-group">
+            <label>News Heading</label>
+            <%= a.text_field :heading, class: 'form-control' %>
+        </div>
+        
+        <div class="form-group">
+            <label>News</label>
+            <%= a.text_area :body, rows: 10, class: 'form-control' %>
+        </div>
+        
+        <div class="form-group">
+            <label>Start Date</label>
+            <%= a.date_field :start, value: Date.today, class: 'form-control' %>
+        </div>
+        
+        <div class="form-group">
+            <label>End Date</label>
+            <%= a.date_field :end, value: (Date.today + 30), class: 'form-control' %>
+        </div>
+        
+        <div class='form-group'>
+            <%= a.submit %>
+        </div>
+        <% end %>
+    
+        
+    </div>
+    
+    <div class='col-md-6'>
+        
+    </div>
+</div>
