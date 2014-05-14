@@ -18,6 +18,7 @@
 //= require prefixfree.min
 //= require 3dcarousel
 //= require demo
+//= require imagebox.js
 
 var counter = 1;
 function addInput(divName){

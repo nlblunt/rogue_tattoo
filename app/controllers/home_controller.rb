@@ -15,7 +15,7 @@ class HomeController < ApplicationController
         (0..5).each do |i|
             loc = rand(@images.count)
 
-            @url.push(@images[loc].img.url(:medium))
+            @url.push(@images[loc].img.url(:thumbnail))
             @artname = Artist.find(@images[loc].artist_id)
             @art.push(@artname.name)
         end
