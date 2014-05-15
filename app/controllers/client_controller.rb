@@ -18,11 +18,11 @@ class ClientController < ApplicationController
   
   def destroy
      @client = Client.find(params[:id])
-     @stories = Story.all(:condistions => ["client_id = ?", params[:id]])
+     @stories = Story.all(:conditions => ["client_id = ?", params[:id]])
      
-     @stories.each do |story|
-         story.destroy
-     end
+     #@stories.each do |story|
+     #    story.destroy
+     #end
      
      @client.destroy
      

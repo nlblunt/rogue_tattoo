@@ -12,12 +12,27 @@ class HomeController < ApplicationController
         @url = Array.new()
         @art = Array.new()
         
+        if(@images.count > 5)
+            loc = (0..@images.count-1).to_a.shuffle[0,6]
+            logger.debug @images.count
+            
+            (0..5).each do |i|
+                logger.debug i
+                logger.debug loc[i]
+                @url.push(@images[loc[i]].img.url(:thumb))
+                @artname = Artist.find(@images[loc[i]].artist_id)
+                @art.push(@artname.name)
+            end
+            
+        else
         (0..5).each do |i|
             loc = rand(@images.count)
 
-            @url.push(@images[loc].img.url(:thumbnail))
+            @url.push(@images[loc].img.url(:thumb))
             @artname = Artist.find(@images[loc].artist_id)
             @art.push(@artname.name)
+
+        end
         end
     else
         @url = Array.new(6, "logo.jpg")
