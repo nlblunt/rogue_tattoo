@@ -41,18 +41,21 @@ class StoryController < ApplicationController
          params[:story][:img].each do 
              @image = @story.images.create(img: params[:story][:img][count])
              @image.artist_id = params[:story][:artist_id]
+             @image.display = "t"
          @image.save
          count = count + 1
          end
         end
       
         id = 0
+        if(params[:story][:images_attributes])
         params[:story][:images_attributes].values.each do |img|
             @image = Image.find(img[:id])
             @image.display = img[:display]
             @image.save
         end
-        
+    end
+    
         if(params[:delete_id] != nil)
             count = 0
             params[:delete_id].each do
