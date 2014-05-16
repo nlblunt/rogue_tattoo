@@ -16,14 +16,12 @@
 //= require bootstrap
 //= require_tree .
 //= require prefixfree.min
-//= require 3dcarousel
-//= require demo
 //= require imagebox.js
 
 var counter = 1;
 function addInput(divName){
   var newdiv = document.createElement('div');
-  newdiv.innerHTML = "<label>Choose Image</label><input id='story_img' name='story[img][]' type='file' /><input name='image[display][]' type='hidden' value='0' /><input id='image_display' name='image[display][]' type='checkbox' value='1' />Display?"; //"Task Name <input type='text' name='task[name][]'>";
+  newdiv.innerHTML = "<label>Choose Image</label><input id='story_img' name='story[img][]' type='file' />";
   document.getElementById(divName).appendChild(newdiv);
   counter++;
 }
