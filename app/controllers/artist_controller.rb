@@ -1,6 +1,10 @@
 class ArtistController < ApplicationController
     def new
         @artist = Artist.new
+        
+        respond_to do |format|
+            format.js
+        end
     end
     
     def create

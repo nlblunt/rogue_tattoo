@@ -6,10 +6,11 @@
 <div class="row">
   <div class="col-md-4">
   		<div class="panel">
-  			<%= link_to "News Admin", news_path, :remote => true %>
+  			<%= link_to "News Admin", newspost_index_path, :remote => true %>
   		</div>
-  		<% @artists.each do |artist| %>
-  		<%= link_to artist.name, edit_artist_path(artist), :remote => true %>
+  		    <% @artists.each do |artist| %>
+  		    <%= link_to artist.name, edit_artist_path(artist), :remote => true %>
+  		    <% end %>
   </div>
  		
  		<div class="col-md-8">
