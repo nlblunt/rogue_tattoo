@@ -1,6 +1,10 @@
 class NewspostController < ApplicationController
     def new
         @newspost = Newspost.new
+        
+        respond_to do |format|
+            format.js
+        end
     end
     
     def create
@@ -19,6 +23,10 @@ class NewspostController < ApplicationController
    
    def edit
        @newspost = Newspost.find(params[:id]) 
+       
+       respond_to do |format|
+           format.js
+       end
    end
    
    def update

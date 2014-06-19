@@ -28,3 +28,24 @@
         <%= image_tag @artist.avatar.url(:medium) %>
     </div>
 </div>
+
+<div class='row'>
+    <table>
+        <% @images.each do |img| %>
+            <td class='img-thumbnail'><%= link_to image_tag(img.img.url(:thumb)), img.img.url(:medium) %></td>
+        <% end %>
+    </table>
+</div>
+
+<div class='row'>
+    Add new images
+        <div class="form-group">
+
+        <div id="dynamicInput" class='form-group'>
+            <label>Add additional Images</label>
+            <input id='artist_img' name='artist[img][]' type='file' />
+        </div>
+        
+        <input type="button" value="Add More Images" onClick="addInput('dynamicInput');">
+        </div>
+</div>

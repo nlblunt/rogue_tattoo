@@ -17,16 +17,35 @@ class ArtistController < ApplicationController
     
     def edit
         @artist = Artist.find(params[:id])
+        @images = Image.where(artist_id: @artist)
       
-      respond_to do |format|
-        format.js
-      end
+        respond_to do |format|
+            format.js
+        end
     end
     
     def update
-        @artist = Artist.find(params[:id])
+        @artist = Artist.find(params[:i])
         
         if @artist.update(params[:artist].permit(:avatar, :name, :bio))
+            
+            if(params[:artist][:img] != nil)
+                count = 0
+                params[:artist][:img].each do 
+                    @image = Image.create(params[:artist][:img][count])
+                    @image.artist_id = @artist.id
+                    @image.display = "t"
+                    @image.save
+                    
+                    #@image = @story.images.create(img: params[:artist][:img][count])
+                    #@image.artist_id = params[:artist][:artist_id]
+                    #@image.display = "t"
+                    #@image.save
+                    
+                    count = count + 1
+                end
+            end
+        
             redirect_to dashboard_path
         else
             render 'edit'
@@ -48,7 +67,6 @@ class ArtistController < ApplicationController
     def show
         @artist = Artist.find(params[:id])
         @images = Image.where(artist_id: @artist)
-        logger.debug @images.count
     end
     
     def artist_params
