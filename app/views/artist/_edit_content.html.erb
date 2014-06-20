@@ -1,8 +1,9 @@
+        <%= form_for @artist, url: artist_path, :html => { :multipart => true }, method: :patch do |a| %>
 <div class='row'>
     <h1 class="text-center">Edit Tattoo Artist</h1>
     <div class='col-md-6'>
         
-        <%= form_for @artist, url: artist_path, :html => { :multipart => true }, method: :patch do |a| %>
+
         <div class="form-group">
             <label>Name</label>
             <%= a.text_field :name, class: 'form-control' %>
@@ -20,7 +21,7 @@
         <div class='form-group'>
             <%= a.submit %>
         </div>
-        <% end %>
+
     </div>
     
     <div class='col-md-6'>
@@ -30,11 +31,17 @@
 </div>
 
 <div class='row'>
-    <table>
-        <% @images.each do |img| %>
-            <td class='img-thumbnail'><%= link_to image_tag(img.img.url(:thumb)), img.img.url(:medium) %></td>
-        <% end %>
-    </table>
+        <table class="text-center table-bordered">
+        <tr>
+        <%= a.fields_for :images do |i| %>
+                <td class="text-center">
+                    <%= link_to image_tag(i.object.img.url(:thumb)), i.object.img.url(:medium), :popup=>['original_image', 'height=300,width=300'], class: 'img-thumbnail' %><br>
+                    <%= i.check_box :display %> Display<br>
+                    <%= check_box_tag 'delete_id[]', i.object.id %> Delete
+                </td>
+        <% end %>       
+        </tr>
+        </table>
 </div>
 
 <div class='row'>
@@ -49,3 +56,4 @@
         <input type="button" value="Add More Images" onClick="addInput('dynamicInput');">
         </div>
 </div>
+        <% end %>

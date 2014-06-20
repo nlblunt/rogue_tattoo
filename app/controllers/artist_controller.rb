@@ -25,7 +25,7 @@ class ArtistController < ApplicationController
     end
     
     def update
-        @artist = Artist.find(params[:i])
+        @artist = Artist.find(params[:id])
         
         if @artist.update(params[:artist].permit(:avatar, :name, :bio))
             
@@ -44,6 +44,18 @@ class ArtistController < ApplicationController
                     
                     count = count + 1
                 end
+            end
+        
+            #Check for images to delete in :delete_id
+            if(params[:delete_id] != nil)
+              #images to delete
+              count = 0
+              params[:delete_id].each do
+                #find the image and destroy it.  Increment count to continue iteration of :delete_id
+                @image = Image.find(params[:delete_id][count])
+                @image.destroy
+                count = count + 1
+              end
             end
         
             redirect_to dashboard_path
