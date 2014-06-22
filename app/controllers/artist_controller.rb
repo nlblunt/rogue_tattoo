@@ -32,7 +32,7 @@ class ArtistController < ApplicationController
             if(params[:artist][:img] != nil)
                 count = 0
                 params[:artist][:img].each do 
-                    @image = Image.create(params[:artist][:img][count])
+                    @image = Image.create(img: params[:artist][:img][count])
                     @image.artist_id = @artist.id
                     @image.display = "t"
                     @image.save
