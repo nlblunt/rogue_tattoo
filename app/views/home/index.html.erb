@@ -1,23 +1,19 @@
 <body class="body-main">
 <div class="container">
-    <div class="row">
-        <div class="col-md-3 panel panel-home">
-            <%= image_tag "logo.jpg", class: "homeimage" %>
+	<div class="col-md-2">
+		<%= image_tag @url[0] %>
+        Created by: <%= @art[0] %>
+	</div>
+	
+	<div class="col-md-8">
+		            <%= image_tag "tattoo_header.jpg", class: "homeimage" %>
             <address>
             1050 Crater Lake Ave<br>
             Medford, Oregon<br>
             (541)622-8119
             </address>
             
-            
-        </div>
-            
-        
-
-        
-        <div class="col-md-9 panel panel-home">
-            <div class="row panel panel-home">
-            <h1 class="text-center">Rogue Tattoo News and Specials</h1>
+                        <h1 class="text-center">Rogue Tattoo News and Specials</h1>
     
             <% @news.each do |n| %>
             <div>
@@ -25,47 +21,12 @@
                 <%= n.body %>
             </div>    
             <% end %>
-            </div>
-        </div>
-    </div>
-    
-    
-
-    
-    <div class='row'>
-    
-    <%#    <div id="container"> %>
-    </div>
-           
-
-
-    <div class="row homeimageloc hidden-xs hidden-sm">
-    <div class="col-md-2 text-center">
-        <%= image_tag @url[0] %>
+	</div>
+	
+	<div class="col-md-2">
+		<%= image_tag @url[0] %>
         Created by: <%= @art[0] %>
-    </div>
-        <div class="col-md-2 text-center">
-        <%= image_tag @url[1] %>
-        Created by: <%= @art[1] %>
-    </div>
-        <div class="col-md-2 text-center">
-        <%= image_tag @url[2] %>
-        Created by: <%= @art[2] %>
-    </div>
-        <div class="col-md-2 text-center">
-        <%= image_tag @url[3] %>
-        Created by: <%= @art[3] %>
-    </div>
-        <div class="col-md-2 text-center">
-        <%= image_tag @url[4] %>
-        Created by: <%= @art[4] %>
-    </div>
-        <div class="col-md-2 text-center">
-        <%= image_tag @url[5] %>
-        Created by: <%= @art[5] %>
-    </div>
-    </div>
-    </div>
+	</div>
     
 </div>
 </body>
