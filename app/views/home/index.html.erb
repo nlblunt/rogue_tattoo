@@ -3,16 +3,32 @@
 	<div class="col-md-2">
 		<%= image_tag @url[0] %>
         Created by: <%= @art[0] %>
+        
+        		<%= image_tag @url[0] %>
+        Created by: <%= @art[0] %>
+        
+        		<%= image_tag @url[0] %>
+        Created by: <%= @art[0] %>
 	</div>
 	
 	<div class="col-md-8">
 		            <%= image_tag "tattoo_header.jpg", class: "homeimage" %>
+            <table class="table-home">
+   				<td>
             <address>
             1050 Crater Lake Ave<br>
             Medford, Oregon<br>
             (541)622-8119
             </address>
-            
+            </td>
+            <td>
+            	<%= image_tag "logo.jpg", class: "home-logo"%>
+            </td>
+            <td>
+            	Facebook<br />
+            	Instagram
+            </td>
+            </table>
                         <h1 class="text-center">Rogue Tattoo News and Specials</h1>
     
             <% @news.each do |n| %>
@@ -25,6 +41,12 @@
 	
 	<div class="col-md-2">
 		<%= image_tag @url[0] %>
+        Created by: <%= @art[0] %>
+        
+        		<%= image_tag @url[0] %>
+        Created by: <%= @art[0] %>
+        
+        		<%= image_tag @url[0] %>
         Created by: <%= @art[0] %>
 	</div>
     
