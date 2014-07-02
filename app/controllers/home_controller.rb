@@ -38,7 +38,6 @@ class HomeController < ApplicationController
         @url = Array.new(6, "logo.jpg")
         @art = Array.new(6, "Logo")
     end
-        gon.url = @url
   end
   
   def dashboard
