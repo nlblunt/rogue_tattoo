@@ -16,7 +16,11 @@
 //= require bootstrap
 //= require_tree .
 //= require prefixfree.min
-//= require imagebox.js
+//= require imagebox
+//= require galleriffic
+//= require jquery.history
+//= require jquery.opacityrollover
+
 
 var counter = 1;
 function addInput(divName){

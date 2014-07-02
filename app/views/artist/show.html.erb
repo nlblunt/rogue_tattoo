@@ -19,10 +19,34 @@
 
 <div class="row">
 <h1 class="text-center">Tattoos created by <%= @artist.name %></h1>
-<table>
-    <% @images.each do |img| %>
-        <td class='img-thumbnail'><%= link_to image_tag(img.img.url(:thumb)), img.img.url(:medium) %></td>
-    <% end %>
-</table>
+
+		<div id="show-images">
+			<div id="container">
+
+				<!-- Start Advanced Gallery Html Containers -->
+				<div id="gallery" class="content">
+					<div id="controls" class="controls"></div>
+					<div class="slideshow-container">
+						<div id="loading" class="loader"></div>
+						<div id="slideshow" class="slideshow"></div>
+					</div>
+					<div id="caption" class="caption-container"></div>
+				</div>
+				<div id="thumbs" class="navigation">
+					<ul class="thumbs noscript">
+						<% @images.each do |img| %>
+						<li>
+							<%= link_to image_tag(img.img.url(:thumb)), img.img.url(:medium), :class => "thumb" %>
+						</li>
+    					<% end %>
+					</ul>
+				</div>
+				<div style="clear: both;"></div>
+			</div>
+		</div>
+		
+<script>
+	$(document).on("page:change", InitGallery());
+</script>
 </div>
 </body>
