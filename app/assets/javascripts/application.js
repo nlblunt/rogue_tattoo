@@ -16,7 +16,6 @@
 //= require bootstrap
 //= require_tree .
 //= require prefixfree.min
-//= require imagebox
 //= require galleriffic
 //= require jquery.history
 //= require jquery.opacityrollover
