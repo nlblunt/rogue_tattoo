@@ -35,4 +35,9 @@ class NewspostController < ApplicationController
       
       redirect_to dashboard_path
    end
+  
+   def destroy
+      @news = Newspost.find(params[:id])
+      @news.destroy
+   end
 end
