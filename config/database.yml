@@ -19,11 +19,11 @@ test:
   timeout: 5000
 
 production:
-adapter: postgresql
-encoding: unicode
-pool: 5
-database: d9929necps59or
-username: fwkjxorfdmlcml
-password: yJXdZ_cfuATw4qgwOtmbQLwCv0
-host: ec2-184-72-238-68.compute-1.amazonaws.com
-port: 5432
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
+  database: d9929necps59or
+  username: fwkjxorfdmlcml
+  password: yJXdZ_cfuATw4qgwOtmbQLwCv0
+  host: ec2-184-72-238-68.compute-1.amazonaws.com
+  port: 5432
