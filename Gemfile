@@ -19,7 +19,6 @@ end
 group :development, :test do
   gem 'sqlite3'
   gem 'rails_layout'
-  #gem 'thin'
 end
 
 # Use SCSS for stylesheets
@@ -50,7 +49,7 @@ end
 
 gem 'devise'
 
-gem 'protected_attributes'
+#gem 'protected_attributes'
 
 gem 'rails_12factor'
 

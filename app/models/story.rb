@@ -1,3 +1,4 @@
+#Legacy class.  Saving incase adding back in
 class Story < ActiveRecord::Base
 			belongs_to :client
 			has_many :images, dependent: :destroy

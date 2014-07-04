@@ -3,6 +3,7 @@ class Admin < ActiveRecord::Base
   # :confirmable, :lockable, :timeoutable and :omniauthable
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
-         
-    attr_accessible :email, :password
+        
+    #Pre-strong params     
+    #attr_accessible :email, :password
 end

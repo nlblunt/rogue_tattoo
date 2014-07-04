@@ -1,3 +1,8 @@
+#This is a legacy file.
+#Originally designed to track clients and client stories (jobs).  Site owner didn't see a need for
+#this functionality so I have removed it to streamline the process.
+#Saving this file incase this needs to be added back in.
+
 class StoryController < ApplicationController
   def new
       @story = Story.new

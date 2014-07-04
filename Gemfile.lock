@@ -88,8 +88,6 @@ GEM
     pg (0.17.1-x64-mingw32)
     pg (0.17.1-x86-mingw32)
     polyglot (0.3.5)
-    protected_attributes (1.0.8)
-      activemodel (>= 4.0.1, < 5.0)
     rack (1.5.2)
     rack-test (0.6.2)
       rack (>= 1.0)
@@ -170,7 +168,6 @@ DEPENDENCIES
   jquery-rails
   paperclip
   pg
-  protected_attributes
   rails (= 4.1.4)
   rails_12factor
   rails_layout
