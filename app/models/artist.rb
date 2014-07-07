@@ -2,7 +2,10 @@ class Artist < ActiveRecord::Base
 	#No longer has stories.  Keeping incase this feature gets added again
 	#has_many :stories, dependent: :destroy
 	
-	#Each artist has many images.  Also, if the artist is destroyed, destory all images by that artist
+	#Make sure name and bio are filled out.
+	validates :name, :bio, presence: true
+	
+		#Each artist has many images.  Also, if the artist is destroyed, destory all images by that artist
 	has_many :images, dependent: :destroy
 	
 	#Used to add images while updating the artist info
