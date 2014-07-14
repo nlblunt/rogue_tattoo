@@ -3,7 +3,7 @@ class Artist < ActiveRecord::Base
 	#has_many :stories, dependent: :destroy
 	
 	#Make sure name and bio are filled out.
-	validates :name, :bio, presence: true
+	validates :name, presence: true #:bio, presence: true
 	
 		#Each artist has many images.  Also, if the artist is destroyed, destory all images by that artist
 	has_many :images, dependent: :destroy
