@@ -39,16 +39,19 @@ class ArtistController < ApplicationController
               
             #Artist info updated.  Now for any new images
             #If [:artist][:img] isn't emtpy
-            if(params[:artist][:img_img] != nil)
+            logger.debug "Testing"
+            if(params[:artist]['new_img'] != nil)
                 #There is at least 1 new image to be added.  Set count to 0 for accessing current location in params[:artist][:img]
                 count = 0
-                
+                logger.debug "New Image"
+                logger.debug params[:artist]
+                logger.debug params[:artist]['new_img']
                 #Loop through each new image in the params hash
-                params[:artist][:new_img].each do
+                params[:artist]['new_img'].each do
                     #Create a new image using params.  This contains the paperclip info such as URL. 
                     #@image = Image.create(img: params[:artist][:img][count])
                     @image = Image.new()
-                    @image.img = params[:artist][:new_img][count]
+                    @image.img = params[:artist]['new_img'][count]
                     #Set the image.artist_id to the current artist for linking
                     @image.artist_id = @artist.id
                     #Set the image.display = t (true) so that it shows on the homepage.  This can be disable later
