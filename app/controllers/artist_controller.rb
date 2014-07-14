@@ -66,7 +66,8 @@ class ArtistController < ApplicationController
               params[:delete_id].each do
                 #Find the image and destroy it.  Increment count to continue iteration of :delete_id
                 @image = Image.find(params[:delete_id][count])
-                @image.destroy
+                #@image.destroy
+                @artist.images.destroy(params[:delete_id][count])
                 count = count + 1
               end
             end
