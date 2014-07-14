@@ -35,7 +35,7 @@ class ArtistController < ApplicationController
         #If this is a valid artist update...
         if @artist.update_attributes(artist_params)#(params[:artist].permit(:avatar, :name, :bio))
             
-            if(1 == 0)
+
               
             #Artist info updated.  Now for any new images
             #If [:artist][:img] isn't emtpy
@@ -60,6 +60,7 @@ class ArtistController < ApplicationController
                 end
             end
         
+            if(1 == 0)
             #Check for images to delete in params[:delete_id]
             if(params[:delete_id] != nil)
               #images to delete.  Set count to 0 so we can choose the correct image to delete
