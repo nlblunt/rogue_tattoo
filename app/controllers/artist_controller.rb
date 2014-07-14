@@ -35,6 +35,8 @@ class ArtistController < ApplicationController
         #If this is a valid artist update...
         if @artist.update_attributes(artist_params)#(params[:artist].permit(:avatar, :name, :bio))
             
+            if(1 == 0)
+              
             #Artist info updated.  Now for any new images
             #If [:artist][:img] isn't emtpy
             if(params[:artist][:img] != nil)
@@ -72,6 +74,9 @@ class ArtistController < ApplicationController
               end
             end
         
+            #end blank test
+            end
+            
             #Redirect back to Dashboard
             redirect_to dashboard_path
         else
