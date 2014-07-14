@@ -30,15 +30,15 @@
 
 <div class='row'>
         <table class="text-center table-bordered">
-        <tr>
+        
         <%= a.fields_for :images do |i| %>
-                <td class="text-center">
+                <td class="text-center edit_images">
                     <%= link_to image_tag(i.object.img.url(:thumb)), i.object.img.url(:medium), :popup=>['original_image', 'height=300,width=300'], class: 'img-thumbnail' %><br>
                     <%= i.check_box :display %> Display<br>
                     <%= check_box_tag 'delete_id[]', i.object.id %> Delete
                 </td>
         <% end %>       
-        </tr>
+        
         </table>
 </div>
 
@@ -51,7 +51,16 @@
             <input id='artist_img' name='artist[img][]' type='file' />
         </div>
         
-        <input type="button" value="Add More Images" onClick="addInput('dynamicInput');">
+        <div id="dynamicInput" class='form-group'>
+            <label>Add additional Images</label>
+            <input id='artist_img' name='artist[img][]' type='file' />
+        </div>
+        <div id="dynamicInput" class='form-group'>
+            <label>Add additional Images</label>
+            <input id='artist_img' name='artist[img][]' type='file' />
+        </div>
+        
+        <!--<input type="button" value="Add More Images" onClick="addInput('dynamicInput');">-->
         </div>
 </div>
         <div class='form-group'>
