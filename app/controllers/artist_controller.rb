@@ -33,8 +33,8 @@ class ArtistController < ApplicationController
         @artist = Artist.find(params[:id])
         
         #If this is a valid artist update...
-        if @artist.update_attributes(artist_params)#(params[:artist].permit(:avatar, :name, :bio))
-            
+        #if @artist.update(artist_params)#(params[:artist].permit(:avatar, :name, :bio))
+        if @artist.update_attributes(artist_params)
 
               
             #Artist info updated.  Now for any new images
@@ -106,6 +106,6 @@ class ArtistController < ApplicationController
     
     private
     def artist_params
-      params.require(:artist).permit(:avatar, :name, :bio, images_attributes: [:img, :artist_id])
+      params.require(:artist).permit(:avatar, :name, :bio, images_attributes: [:img, :display, :artist_id])
     end
 end

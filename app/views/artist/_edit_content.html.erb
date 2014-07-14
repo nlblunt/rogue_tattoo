@@ -31,7 +31,7 @@
 <div class='row'>
         <table class="text-center table-bordered">
         
-        <%= a.fields_for :images do |i| %>
+        <%= a.fields_for :images, @artist.images do |i| %>
                 <td class="text-center edit_images">
                     <%= link_to image_tag(i.object.img.url(:thumb)), i.object.img.url(:medium), :popup=>['original_image', 'height=300,width=300'], class: 'img-thumbnail' %><br>
                     <%= i.check_box :display %> Display<br>
