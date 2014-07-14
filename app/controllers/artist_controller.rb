@@ -63,7 +63,6 @@ class ArtistController < ApplicationController
                 end
             end
         
-            if(1 == 0)
             #Check for images to delete in params[:delete_id]
             if(params[:delete_id] != nil)
               #images to delete.  Set count to 0 so we can choose the correct image to delete
@@ -78,8 +77,6 @@ class ArtistController < ApplicationController
               end
             end
         
-            #end blank test
-            end
             
             #Redirect back to Dashboard
             redirect_to dashboard_path
