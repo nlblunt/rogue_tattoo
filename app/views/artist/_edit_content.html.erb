@@ -1,6 +1,7 @@
         <%= form_for @artist, url: artist_path, :html => { :multipart => true }, method: :patch do |a| %>
 <div class='row'>
     <h1 class="text-center">Edit Tattoo Artist</h1>
+    <h3 class="text-center"><%= link_to "Remove Tattoo Artist", artist_path(@artist), method: :delete %></h3>
     <div class='col-md-6'>
         
 
