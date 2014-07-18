@@ -11,7 +11,7 @@ class NewspostController < ApplicationController
     
     def create
       #Create a new newspost using params
-        @newspost = Newspost.create(newspost_params)#params[:newspost].permit(:heading, :body, :start_date, :end_date))
+        @newspost = Newspost.create(newspost_params)
         
         #Redirect to Dashboard
         redirect_to dashboard_path

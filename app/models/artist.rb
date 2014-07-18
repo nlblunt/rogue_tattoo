@@ -16,6 +16,13 @@ class Artist < ActiveRecord::Base
     #Make sure the attached file is an image
     validates_attachment_content_type :avatar, :content_type => /\Aimage\/.*\Z/ #["image/jpg", "image/jpeg", "image/png"]
   
-  #Before strong params
-  #attr_accessible :name, :bio, :avatar
+    def add_image(img)
+    	image = self.images.new()
+    	image.img = img
+    	image.save
+    end
+
+    def delete_image(id)
+    	self.images.destroy(id)
+    end
 end

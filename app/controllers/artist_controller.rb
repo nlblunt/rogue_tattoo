@@ -36,28 +36,24 @@ class ArtistController < ApplicationController
         #if @artist.update(artist_params)#(params[:artist].permit(:avatar, :name, :bio))
         if @artist.update_attributes(artist_params)
 
-              
             #Artist info updated.  Now for any new images
             #If [:artist][:img] isn't emtpy
-            logger.debug "Testing"
             if(params[:artist]['new_img'] != nil)
                 #There is at least 1 new image to be added.  Set count to 0 for accessing current location in params[:artist][:img]
                 count = 0
-                logger.debug "New Image"
-                logger.debug params[:artist]
-                logger.debug params[:artist]['new_img']
                 #Loop through each new image in the params hash
                 params[:artist]['new_img'].each do
+                    @artist.add_image(params[:artist]['new_img'][count])
                     #Create a new image using params.  This contains the paperclip info such as URL. 
                     #@image = Image.create(img: params[:artist][:img][count])
-                    @image = Image.new()
-                    @image.img = params[:artist]['new_img'][count]
+                    #@image = Image.new()
+                    #@image.img = params[:artist]['new_img'][count]
                     #Set the image.artist_id to the current artist for linking
-                    @image.artist_id = @artist.id
+                    #@image.artist_id = @artist.id
                     #Set the image.display = t (true) so that it shows on the homepage.  This can be disable later
-                    @image.display = "t"
+                    #@image.display = "t"
                     #Save all the changes to the image
-                    @image.save
+                    #@image.save
                     #Incremint count to get next image (if there is one)
                     count = count + 1
                 end
@@ -67,17 +63,12 @@ class ArtistController < ApplicationController
             if(params[:delete_id] != nil)
               #images to delete.  Set count to 0 so we can choose the correct image to delete
               count = 0
-              
               params[:delete_id].each do
-                #Find the image and destroy it.  Increment count to continue iteration of :delete_id
-                @image = Image.find(params[:delete_id][count])
-                #@image.destroy
-                @artist.images.destroy(params[:delete_id][count])
+                @artist.delete_image(params[:delete_id][count])
                 count = count + 1
               end
             end
         
-            
             #Redirect back to Dashboard
             redirect_to dashboard_path
         else
