@@ -15,12 +15,52 @@ img {
 
 .navbar-color
 {
-    background-color: #000000;
+    background-color:rgba(0,0,0,0.00);
+    font-family: 'Pinyon Script', cursive;
 }
-.dropdown-menu>li>a
+
+.navbar-center
 {
-    color:white;
+  text-align: center;
+  width: 100%;
+  //display: inline-block;
 }
+
+.navbar-center-item
+{
+  display: inline-block;
+  font-family: 'Pinyon Script', cursive;
+  font-size: 24px;
+  margin:10px;
+  text-decoration: none;
+  color: red;
+}
+
+.navbar-text-color
+{
+  color: red;
+}
+
+.drop-menu-item
+{
+  background-color: black;
+}
+.dropdown-menu > li > a
+{
+  display: block;
+  padding: 3px 20px;
+  clear: both;
+  font-size: 24px;
+  line-height: 1.428571429;
+  color: red;
+  white-space: nowrap;
+}
+
+.nav-container
+{
+  width: 100%;
+}
+
 // THESE ARE EXAMPLES YOU CAN MODIFY
 // create your own classes
 // to make views framework-neutral
@@ -71,10 +111,6 @@ section {
     padding: 0 15px;
 }
 
-.dropdown-menu
-{
- color:white;   
-}
 
 .table-border
 {
