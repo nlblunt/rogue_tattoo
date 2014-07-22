@@ -14,6 +14,7 @@ gem 'paperclip'
 group :production do
   gem 'pg'
   gem 'aws-sdk'
+  gem 'rails_12factor'
 end
 
 group :development, :test do
@@ -60,7 +61,7 @@ gem 'devise'
 
 #gem 'protected_attributes'
 
-gem 'rails_12factor'
+
 
 gem 'tzinfo-data'
 
