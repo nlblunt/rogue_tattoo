@@ -6,9 +6,11 @@
 	
 	<div class="col-md-10">
         <div class="panel home-logo-panel">
-            <%= image_tag "header.jpg" %>
+            <%= image_tag "header.png" %>
         </div>
-		<%= render '/layouts/navigation' %>           
+		<%= render '/layouts/navigation' %>   
+
+        <div class="news-style">
             <h1 class="text-center">Rogue Tattoo News and Specials</h1>
     
             <% @news.each do |n| %>
@@ -17,8 +19,56 @@
                 <%= n.body %>
             </div>    
             <% end %>
+        </div>
+
+        <div id="carousel" class="carousel slide carousel-size" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carousel" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel" data-slide-to="1"></li>
+                <li data-target="#carousel" data-slide-to="2"></li>
+                <li data-target="#carousel" data-slide-to="3"></li>
+                <li data-target="#carousel" data-slide-to="4"></li>
+                <li data-target="#carousel" data-slide-to="5"></li>
+                <li data-target="#carousel" data-slide-to="6"></li>
+                <li data-target="#carousel" data-slide-to="7"></li>
+                <li data-target="#carousel" data-slide-to="8"></li>
+                <li data-target="#carousel" data-slide-to="9"></li>
+                <li data-target="#carousel" data-slide-to="10"></li>
+            </ol>
+
+            <div class="carousel-inner">
+                <div class="item active">
+                    <%= image_tag 'logo.jpg' %>
+                        <div class="carousel-caption">
+                            
+                        </div>
+                </div>
+
+                <%= @images.each do |img| %>
+                <div class="item">
+                    <%- image_tag img.img.url %>
+                        <div class="carousel-caption">
+                            img.artist.name
+                        </div>
+                </div>
+                <% end %> 
+            </div>
+
+            <a class="left carousel-control" href="#carousel" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+            </a>
+            <a class="right carousel-control" href="#carousel" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+            </a>
+        </div>
+
+
 	</div>
 	
 	<div class="col-md-1 hidden-xs hidden-sm">
 	</div>
+
+<script>
+    $(document).on("page:change", ('.carousel').carousel());
+</script>
 </body>
