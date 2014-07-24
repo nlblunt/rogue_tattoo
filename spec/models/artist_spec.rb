@@ -12,10 +12,6 @@ describe Artist do
     #FactoryGirl.build(:artist, name: nil).should_not be_valid
     expect(FactoryGirl.build(:artist, name: nil)).not_to be_valid
   end
-  
-  it "is invalid without a bio" do
-    #expect(FactoryGirl.build(:artist, bio: nil)).not_to be_valid
-  end
 
   it "destroys any associated images on delete" do
     artist = FactoryGirl.create(:artist)
@@ -27,13 +23,7 @@ describe Artist do
     expect(Image.count).to eq(0)
   end
 
-  it "adds a new image" do
-    #artist = FactoryGirl.create(:artist)
-    #artist.add_image()
-    #expect(Image.count).to eq(1)
-  end
-
-  it "updates display status"
+  it "adds a new image"
 
   it "deletes selected images" do
     # Create an artist and an image to delete

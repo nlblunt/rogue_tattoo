@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140507003622) do
+ActiveRecord::Schema.define(version: 20140724014853) do
 
   create_table "admins", force: true do |t|
     t.string   "email",                  default: "", null: false
@@ -64,6 +64,30 @@ ActiveRecord::Schema.define(version: 20140507003622) do
 
   add_index "images", ["artist_id"], name: "index_images_on_artist_id"
   add_index "images", ["story_id"], name: "index_images_on_story_id"
+
+  create_table "makeupartists", force: true do |t|
+    t.string   "name"
+    t.string   "picture"
+    t.text     "bio"
+    t.string   "avatar_file_name"
+    t.string   "avatar_content_type"
+    t.integer  "avatar_file_size"
+    t.datetime "avatar_updated_at"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "makeupimages", force: true do |t|
+    t.integer  "makeupartist_id"
+    t.string   "img_file_name"
+    t.string   "img_content_type"
+    t.integer  "img_file_size"
+    t.datetime "img_updated_at"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "makeupimages", ["makeupartist_id"], name: "index_makeupimages_on_makeupartist_id"
 
   create_table "newsposts", force: true do |t|
     t.text     "heading"
