@@ -19,5 +19,4 @@ RSpec.describe HomeController do #, :type => :controller do
 			end
 		end
 	end
-
 end

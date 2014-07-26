@@ -6,7 +6,6 @@ RSpec.describe Makeupartist, :type => :model do
   end
   
   it "is invalid without a name" do
-    #FactoryGirl.build(:artist, name: nil).should_not be_valid
     expect(FactoryGirl.build(:makeupartist, name: nil)).not_to be_valid
   end
 
