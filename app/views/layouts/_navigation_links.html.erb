@@ -13,8 +13,8 @@
         <a href="#" class="dropdown-toggle navbar-text-color" data-toggle="dropdown">Permanent Makeup<b class="caret"></b></a>
         <ul class="dropdown-menu drop-menu-item navbar-color">
         	<% @makeupart = Makeupartist.all %>
-        	<% @makeupart.each do |artist| %>
-          	<li class="navbar-text-color drop-menu-item"><%= link_to artist.name, artist_path(artist) %></li>
+        	<% @makeupart.each do |m_artist| %>
+          	<li class="navbar-text-color drop-menu-item"><%= link_to m_artist.name, makeupartist_path(m_artist) %></li>
         	<% end %>
         </ul>
 </li>
