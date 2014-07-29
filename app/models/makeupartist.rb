@@ -14,13 +14,13 @@ class Makeupartist < ActiveRecord::Base
 	#Make sure the attached file is an image
     validates_attachment_content_type :avatar, :content_type => /\Aimage\/.*\Z/
 
-     def add_image(img)
+     def add_makeupimage(img)
     	image = self.makeupimages.new()
     	image.img = img
     	image.save
     end
 
-    def delete_image(id)
+    def delete_makeupimage(id)
     	self.makeupimages.destroy(id)
     end
 end
