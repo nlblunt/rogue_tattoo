@@ -1,0 +1,69 @@
+        <%= form_for @m_artist, url: makeupartist_path, :html => { :multipart => true }, method: :patch do |a| %>
+<div class='row'>
+    <h1 class="text-center">Edit Makeup Artist</h1>
+    <h3 class="text-center"><%= link_to "Remove Makeup Tattoo Artist", makeupartist_path(@m_artist), method: :delete %></h3>
+    <div class='col-md-6'>
+        
+
+        <div class="form-group">
+            <label>Name</label>
+            <%= a.text_field :name, class: 'form-control' %>
+        </div>
+
+        <div class='form-group'>
+            <label>Bio</label>
+            <%= a.text_area :bio, class: 'form-control' %>
+        </div>
+        
+        <div class='form-group'>
+            <label>Choose file to change profile picture</label>
+            <%= a.file_field :avatar %>
+        </div>
+
+
+    </div>
+    
+    <div class='col-md-6'>
+        <h3 class="text-center">Current Profile Picture</h3><br>
+        <%= image_tag @m_artist.avatar.url(:medium) %>
+    </div>
+</div>
+
+<div class='row'>
+        <table class="text-center table-bordered">
+        
+        <%= a.fields_for :makeupimages, @m_artist.makeupimages do |i| %>
+                <td class="text-center edit_images">
+                    <%= link_to image_tag(i.object.img.url(:thumb)), i.object.img.url(:medium), :popup=>['original_image', 'height=300,width=300'], class: 'img-thumbnail' %><br>
+                    <%= check_box_tag 'delete_id[]', i.object.id %> Delete
+                </td>
+        <% end %>       
+        
+        </table>
+</div>
+
+<div class='row'>
+    Add new images
+        <div class="form-group">
+
+        <div id="dynamicInput" class='form-group'>
+            <label>Add additional Images</label>
+            <input id='makeupartist_img' name='makeupartist[new_img][]' type='file' />
+        </div>
+        
+        <div id="dynamicInput" class='form-group'>
+            <label>Add additional Images</label>
+            <input id='makeupartist_img' name='makeupartist[new_img][]' type='file' />
+        </div>
+        <div id="dynamicInput" class='form-group'>
+            <label>Add additional Images</label>
+            <input id='makeupartist_img' name='makeupartist[new_img][]' type='file' />
+        </div>
+        
+        <!--<input type="button" value="Add More Images" onClick="addInput('dynamicInput');">-->
+        </div>
+</div>
+        <div class='form-group'>
+            <%= a.submit %>
+        </div>
+        <% end %>

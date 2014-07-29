@@ -5,19 +5,18 @@ RogueTattoo::Application.routes.draw do
   #get "client/edit"
   get 'dashboard' => "home#dashboard"
   get 'about' => 'home#about'
-  get 'appointments' => 'home#appointments'
   
   resources :artist
-  resources :client
-  resources :story
+  resources :makeupartist
   resources :image
+  resources :makeupimage
   resources :newspost
   
   devise_for :admins
   
-  devise_scope :admin do
-      get 'superuser' => "devise/registrations#new"
-  end
+  #devise_scope :admin do
+  #    get 'superuser' => "devise/registrations#new"
+  #end
   
   get "home/index"
   

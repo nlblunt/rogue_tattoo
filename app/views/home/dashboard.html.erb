@@ -21,9 +21,14 @@
   		    <% @artists.each do |artist| %>
   		    <li><%= link_to artist.name, edit_artist_path(artist), :remote => true %></li>
   		    <% end %>
-
   		</ul>
   		
+      <div class="panel-heading">Makeup Artists</div>
+      <ul class="nav nav-stacked nav-pills">
+        <li><%= link_to "Add New Makeup Artist", new_makeupartist_path, :class => "alert-info", :remote => true %></li>
+        <% @makeupartists.each do |m_artist| %>
+        <li><%= link_to m_artist.name, edit_makeupartist_path(m_artist), :remote => true %></li>
+        <% end %>
   		</div>
   </div>
  		

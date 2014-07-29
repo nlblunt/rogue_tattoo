@@ -19,6 +19,7 @@ class HomeController < ApplicationController
       if(admin_signed_in?)
           #Get the artists and newsposts
           @artists = Artist.all
+          @makeupartists = Makeupartist.all
           @newsposts = Newspost.all
       #User is not signed in
       else
