@@ -1,0 +1,53 @@
+<body class="body-main">
+<%= render '/layouts/navigation' %>
+<div class = "row">
+    <div class="col-md-4">
+        <%= image_tag(@m_artist.avatar.url(:medium)) %>        
+    </div>
+    
+    <div class="col-md-8">
+        <h2>
+            <%= @m_artist.name %>    
+        </h2>
+
+        <div>
+            <%= @m_artist.bio %>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="row">
+<h1 class="text-center">Permanent makeup created by <%= @m_artist.name %></h1>
+
+		<div id="show-images">
+			<div id="container">
+
+				<!-- Start Advanced Gallery Html Containers -->
+				<div id="gallery" class="content">
+					<div id="controls" class="controls"></div>
+					<div class="slideshow-container">
+						<div id="loading" class="loader"></div>
+						<div id="slideshow" class="slideshow"></div>
+					</div>
+					<div id="caption" class="caption-container"></div>
+				</div>
+				<div id="thumbs" class="navigation">
+					<ul class="thumbs noscript">
+						<% @images.each do |img| %>
+						<li>
+							<%= link_to image_tag(img.img.url(:thumb)), img.img.url(:medium), :class => "thumb" %>
+						</li>
+    					<% end %>
+					</ul>
+				</div>
+				<div style="clear: both;"></div>
+			</div>
+		</div>
+		
+<script>
+	$(document).on("page:change", InitGallery());
+</script>
+</div>
+</body>
