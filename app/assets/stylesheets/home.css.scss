@@ -30,7 +30,7 @@
 }
 .home-logo-panel
 {
-    background-color:rgba(0,0,0,1);
+    //background-color:rgba(0,0,0,1);
     height: auto;
     //max-height:75%;
     //width: 350px;
@@ -56,4 +56,11 @@
     height: 500px;
     margin-left: auto;
     margin-right: auto;
+}
+
+.news
+{
+    width: 75%;
+    margin-left: auto
+    margin-right: auto
 }

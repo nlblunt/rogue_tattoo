@@ -1,11 +1,10 @@
 <body class="body-main">
 	<div class="col-md-1 hidden-xs hidden-sm">
-        <%= link_to "Facebook", "http://www.facebook.com/roguetattoos" %><br />
-        <%= link_to "Instagram", "http://www.instagram.com/ludlowtattoo" %>
+
 	</div>
 	
 	<div class="col-md-10">
-        <div class="panel home-logo-panel">
+        <div class="home-logo-panel">
             <%= image_tag "header.png" %>
         </div>
 		<%= render '/layouts/navigation' %>   
@@ -14,7 +13,7 @@
             <h1 class="text-center">Rogue Tattoo News and Specials</h1>
     
             <% @news.each do |n| %>
-            <div>
+            <div class='news'>
                 <h3 class="text-center"><%= n.heading %></h3>
                 <%= n.body %>
             </div>    
