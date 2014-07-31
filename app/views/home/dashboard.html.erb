@@ -29,7 +29,14 @@
         <% @makeupartists.each do |m_artist| %>
         <li><%= link_to m_artist.name, edit_makeupartist_path(m_artist), :remote => true %></li>
         <% end %>
-  		</div>
+  		</ul>
+
+      <div class="panel-heading">Site Admin</div>
+      <ul class="nav nav-stacked nav-pills">
+        <li><%= link_to "About us", edit_about_us_path, :remote => true %></li>
+        <li><%= link_to "Admin Users", edit_admins_path, :remote => true %></li>
+      </ul>
+      </div>
   </div>
  		
  		<div class="col-md-8">

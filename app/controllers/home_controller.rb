@@ -33,6 +33,25 @@ class HomeController < ApplicationController
   def about
   end
 
-  def appointments
+  def edit_about_us
+    
+    respond_to do |format|
+      format.js
+    end
+  end
+
+  def edit_admins
+    @admins = Admin.all
+
+    respond_to do |format|
+      format.js
+    end
+  end
+
+  def delete_admin
+    a = Admin.find(params[:id])
+    a.delete
+
+    redirect_to dashboard_path
   end
 end

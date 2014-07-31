@@ -5,6 +5,9 @@ RogueTattoo::Application.routes.draw do
   #get "client/edit"
   get 'dashboard' => "home#dashboard"
   get 'about' => 'home#about'
+  get 'edit_about_us' => 'home#edit_about_us'
+  get 'edit_admins' => 'home#edit_admins'
+  delete 'delete_admin' => 'home#delete_admin'
   
   resources :artist
   resources :makeupartist
