@@ -31,13 +31,25 @@ class HomeController < ApplicationController
   end
 
   def about
+    @about_us = File.read(Rails.root.join("public", "about_us.txt").to_s)
   end
 
   def edit_about_us
-    
+    @about_us = File.read(Rails.root.join("public", "about_us.txt").to_s)
+
     respond_to do |format|
       format.js
     end
+  end
+
+  def save_about_us
+    File.open(Rails.root.join("public", "about_us.txt"), "w+") do |f|
+      f.write(params[:desc])
+    end
+    flash[:notice] = "Updated About Us"
+  
+
+    redirect_to dashboard_path
   end
 
   def edit_admins

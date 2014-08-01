@@ -1,1 +1,11 @@
 Edit About Us
+
+<%= form_tag :save_about_us do %>
+	<div class="form-group">
+		<%= text_area_tag(:desc, @about_us, rows: 10, class: "form-control") %>
+		</div>
+
+	<div class="form-group">
+		<%= submit_tag %>
+	</div>
+<% end %>

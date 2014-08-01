@@ -28,7 +28,7 @@ RSpec.describe Makeupartist, :type => :model do
     expect(Makeupimage.count).to eq(1)
     
     # Delete the image by image.id
-    makeupartist.delete_image(img.id)
+    makeupartist.delete_makeupimage(img.id)
     expect(Makeupimage.count).to eq(0)
   end
 end

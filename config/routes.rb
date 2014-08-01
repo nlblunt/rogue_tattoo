@@ -6,6 +6,7 @@ RogueTattoo::Application.routes.draw do
   get 'dashboard' => "home#dashboard"
   get 'about' => 'home#about'
   get 'edit_about_us' => 'home#edit_about_us'
+  post 'save_about_us' => 'home#save_about_us'
   get 'edit_admins' => 'home#edit_admins'
   delete 'delete_admin' => 'home#delete_admin'
   
