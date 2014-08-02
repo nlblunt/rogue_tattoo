@@ -106,6 +106,7 @@ describe 'adding a new makeup artist', :type => :feature do
 		click_on 'Add New Makeup Artist'
 		#expect(current_path).to eq(new_artist_path)
 
+
 		fill_in 'makeupartist_name', :with => nil
 		fill_in 'makeupartist_bio', :with => "Some Bio"
 

@@ -23,8 +23,6 @@ describe Artist do
     expect(Image.count).to eq(0)
   end
 
-  it "adds a new image"
-
   it "deletes selected images" do
     # Create an artist and an image to delete
     artist = FactoryGirl.create(:artist)
