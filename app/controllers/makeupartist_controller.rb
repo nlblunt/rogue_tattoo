@@ -83,6 +83,6 @@ class MakeupartistController < ApplicationController
     
     private
     def makeupartist_params
-      params.require(:makeupartist).permit(:avatar, :name, :bio, makeupimages_attributes: [:id, :img, :display, :makeupartist_id])
+      params.require(:makeupartist).permit(:avatar, :name, :bio, :facebook, :instagram, makeupimages_attributes: [:id, :img, :display, :makeupartist_id])
     end
 end

@@ -66,4 +66,12 @@ class HomeController < ApplicationController
 
     redirect_to dashboard_path
   end
+
+  def admin_edit_images
+    @images = Image.all
+
+    respond_to do |format|
+      format.js
+    end
+  end
 end

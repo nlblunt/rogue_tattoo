@@ -14,13 +14,13 @@
             <%= @m_artist.bio %>
         </div>
 
-        <% if @m_artist.facebook %>
+        <% if @m_artist.facebook != ""%>
         <div>
         	<%= link_to "See me on Facebook", @m_artist.facebook %>
         </div>
         <% end %>
 
-        <% if @m_artist.instagram %>
+        <% if @m_artist.instagram != ""%>
         <div>
         	<%= link_to "Instagram", @m_artist.instagram %>
         </div>

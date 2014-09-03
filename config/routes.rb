@@ -8,6 +8,7 @@ RogueTattoo::Application.routes.draw do
   get 'edit_about_us' => 'home#edit_about_us'
   post 'save_about_us' => 'home#save_about_us'
   get 'edit_admins' => 'home#edit_admins'
+  get 'admin_edit_images' => 'home#admin_edit_images'
   delete 'delete_admin' => 'home#delete_admin'
   
   resources :artist
