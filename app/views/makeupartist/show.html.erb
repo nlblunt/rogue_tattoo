@@ -13,13 +13,25 @@
         <div>
             <%= @m_artist.bio %>
         </div>
+
+        <% if @m_artist.facebook %>
+        <div>
+        	<%= link_to "See me on Facebook", @m_artist.facebook %>
+        </div>
+        <% end %>
+
+        <% if @m_artist.instagram %>
+        <div>
+        	<%= link_to "Instagram", @m_artist.instagram %>
+        </div>
+        <% end %>
     </div>
 </div>
 
 
 
 <div class="row">
-<h1 class="text-center">Permanent makeup created by <%= @m_artist.name %></h1>
+<h1 class="text-center">Cosmetic Tattoos created by <%= @m_artist.name %></h1>
 
 		<div id="show-images">
 			<div id="container">
