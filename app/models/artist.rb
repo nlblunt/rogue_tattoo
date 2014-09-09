@@ -19,6 +19,7 @@ class Artist < ActiveRecord::Base
     def add_image(img)
     	image = self.images.new()
     	image.img = img
+    	image.display = "t"
     	image.save
     end
 

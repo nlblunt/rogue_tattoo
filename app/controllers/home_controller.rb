@@ -9,7 +9,7 @@ class HomeController < ApplicationController
       @news = Newspost.where("DATE(?) BETWEEN start_date AND end_date", @date)
 
       #Get the last 10 images for the carousel
-      @images = Image.last(10)
+      @images = Image.where(display: true)
 
   end
   
