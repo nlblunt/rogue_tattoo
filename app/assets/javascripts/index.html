@@ -1,4 +1,4 @@
-<body class="body-main">
+<body class="body-main" ng-controller="homeController as homeCtrl">
 	<header>
 		<img ng-src="images/header.png">
 		<nav>
@@ -10,4 +10,24 @@
 			</ul>
 		</nav>
 	</header>
+
+	<section id="main">
+		<div id="slide-show">
+			<img ng-src={{current_display}}>
+		</div>
+
+		<article id="featured-artist">
+			<h1>Featured Artist</h1>
+			<img ng-src={{featured_artist_img[0]}}>
+			<img ng-src={{featured_artist_img[0]}}>
+			<img ng-src={{featured_artist_img[0]}}>
+			<img ng-src={{featured_artist_img[0]}}>
+		</article>
+	</section>
+
+	<section id="news">
+	Latest news here
+	</section>
+
+
 </body>

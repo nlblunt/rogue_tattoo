@@ -19,4 +19,10 @@ RSpec.describe HomeController do #, :type => :controller do
 			end
 		end
 	end
+
+	describe "GET 'display_images'" do
+		it "returns URLs of images with 'diplay=true'" do
+
+		end
+	end
 end
