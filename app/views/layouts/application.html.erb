@@ -10,16 +10,6 @@
     <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
     <%= csrf_meta_tags %>
   </head>
-  <body>
-    <header>
-    </header>
-    
-    <main role="main">
        <%= render 'layouts/messages' %>
-
-
        <%= yield %>
-       
-    </main>
-  </body>
 </html>
