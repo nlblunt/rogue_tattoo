@@ -13,12 +13,16 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
-//= require bootstrap
+//= require angular/angular
+//= require ng-file-upload/angular-file-upload
+//= require angular-route/angular-route
+//= require angular-rails-templates
+//= require angular-resource/angular-resource
+//= require directives/directives
+//= require services/services
+//= require controllers/controllers
 //= require_tree .
-//= require prefixfree.min
-//= require galleriffic
-//= require jquery.history
-//= require jquery.opacityrollover
+//= require bootstrap-sprockets
 
 
 var counter = 1;

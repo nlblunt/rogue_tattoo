@@ -13,6 +13,15 @@ class HomeController < ApplicationController
 
   end
   
+  def display_images
+    @images = Image.where(display: true)
+
+    respond_to do |format|
+      format.json {render :display}
+      format.html {render status: :error, nothing: true}
+    end
+  end
+
   def dashboard
     #Called when Dashboard is accessed
       #If someone is signed in
