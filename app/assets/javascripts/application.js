@@ -23,12 +23,3 @@
 //= require controllers/controllers
 //= require_tree .
 //= require bootstrap-sprockets
-
-
-var counter = 1;
-function addInput(divName){
-  var newdiv = document.createElement('div');
-  newdiv.innerHTML = "<label>Choose Image</label><input id='story_img' name='artist[img][]' type='file' />";
-  document.getElementById(divName).appendChild(newdiv);
-  counter++;
-}
