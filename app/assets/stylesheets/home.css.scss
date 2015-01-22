@@ -1,96 +1,198 @@
 body *
 {
-	margin: 0px;
-	padding: 0px;
-	color: white;
-	position: relative;
-	//display: block;
+  margin: 0px;
+  padding: 0px;
+  color: white;
+  position: relative;
+
+
+
+
+  //display: block;
+  text-align: left;
 }
 
 body
 {
-	background-color: black;
+  background-color: black;
+  position: relative;
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url(images/bg.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 header
 {
-	margin-bottom: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+header img
+{
+  width: 100%;
+
 }
 
 header nav
 {
-	height: 30px;
-	background-color: rgb(40,40,40);
-	width:80%;
-	margin-left:10%;
-	margin-right:10%;
+  height: 30px;
+  background-color: rgb(40,40,40);
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 header nav ul
 {
-	width: 100%;
-	height: 100%;
-	list-style: none;
+  width: 100%;
+  height: 100%;
+  list-style: none;
 }
 
 header nav ul li
 {
-	width: 15%;
-	height: 100%;
-	margin-left: 5%;
-	margin-right: 5%;
-	float: left;
-	display: block;
-	text-align: center;
+  width: 25%;
+  height: 100%;
+  margin-left: 0%;
+  margin-right: 0%;
+  float: left;
+  display: block;
+  text-align: center;
 }
 
 header nav ul li:hover
 {
-	background-color: rgb(30,30,30);
+  background-color: rgb(30,30,30);
 }
 
 section#main
 {
-	background-color: rgb(40,40,40);
-	width: 80%;
-	height: 500px;
-	margin-left: 10%;
-	margin-right: 10%;
+  background-color: rgb(40,40,40);
+  width: 80%;
+  max-height: 500px;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 div#slide-show
 {
-	float: left;
-	width: 50%;
-	max-height: 500px;
-	height: 500px;
-	background-color: black;
+  float: left;
+  width: 50%;
+  max-height: 500px;
+
+  //height: 500px;
+  margin-bottom: 10px;
 }
 
 div#slide-show img
 {
-	width: 100%;
+  width: 100%;
 }
 
 article#featured-artist
 {
-	float: left;
-	width: 50%;
-	height: 500px;
-	background-color: black;
+  float: left;
+  width: 50%;
+  max-height: 500px;
+  background-color: rgba(0,0,0,0.75);
 }
 
-article#featured-artist h1
+section#samples
 {
-	text-align: center;
+  margin-top: 0%;
 }
 
-article#featured-artist img
+section#about
 {
-	max-width: 25%;
-	max-height: 25%;
-	float: left;
-	margin-top: 50%;
-	position: relative;
-	bottom: 25px;
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+  clear: left;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+section#news
+{
+  clear: left;
+  width: 80%;
+  margin-top: 20px;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+section#news h1
+{
+  text-align: center;
+  border-bottom: groove 3px grey;
+}
+
+li.news-item
+{
+  list-style: none;
+}
+
+div.date
+{
+  float: left;
+  display: block;
+  width: 15%;
+  color: red;
+}
+
+div.title
+{
+  width: 85%;
+  float: left;
+  color: red;
+}
+
+div.news-content
+{
+  border-bottom: groove 2px grey;
+
+}
+
+#location
+{
+  width: 100%;
+}
+
+footer
+{
+  width: 80%;
+  margin-top: 20px;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+footer ul
+{
+  list-style: none;
+}
+
+footer ul li
+{
+  float: left;
+  //margin-right: 20px;
+  display: block;
+}
+
+li#address
+{
+  width: 40%;
+}
+
+li#phone
+{
+  width: 25%;
+}
+
+li#hours
+{
+  width: 35%;
 }
