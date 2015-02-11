@@ -7,7 +7,8 @@
 			'ngResource',
 			'appControllers',
 			'appServices',
-			'appDirectives'
+			'appDirectives',
+			'ngDropdowns'
 		]);
 
 	roguetattoo.config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider)
@@ -17,8 +18,13 @@
 		$routeProvider
 		.when('/',
 		{
-			templateUrl: "index.html",
+			templateUrl: "html/index.html",
 			controller: "homeController"
+		})
+		.when('/artists',
+		{
+			templateUrl: "html/artists.html",
+			controller: "artistController"
 		})
 		.otherwise({
 			redirectTo: '/'

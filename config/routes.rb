@@ -11,6 +11,7 @@ RogueTattoo::Application.routes.draw do
   get 'admin_edit_images' => 'home#admin_edit_images'
   delete 'delete_admin' => 'home#delete_admin'
   get 'display_images' => 'home#display_images'
+  get 'list' => 'artist#list'
   
   resources :artist
   resources :makeupartist

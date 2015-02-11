@@ -1,0 +1,40 @@
+<body class="body-main" ng-controller="artistController as artistCtrl">
+	<header>
+		<nav>
+			<ul>
+				<li><a href="/">Home</a></li>
+				<li><a href="/artists">Artist</a></li>
+				<li>Cosmetic</li>
+				<li>Appointments</li>
+			</ul>
+		</nav>
+        <img src="images/header.png">
+	</header>
+
+	<section id="artists">
+		<div>
+		<ul>
+			<li class="display-artist" ng-repeat="artist in artists.data">
+
+			<div class="display-artist">
+				<div>
+					<img class="avatar" ng-src={{artist.avatar}}/>
+					<h1>{{artist.name}}</h1>
+					<p>{{artist.bio}}</p>
+				</div>
+				<div class="display-samples">
+					<div class="display-thumb" style="background-image: url('{{artist.avatar}}')"></div>
+					<div class="display-thumb" style="background-image: url('{{artist.avatar}}')"></div>
+					<div class="display-thumb" style="background-image: url('{{artist.avatar}}')"></div>
+					<div class="display-thumb" style="background-image: url('{{artist.avatar}}')"></div>
+					<div class="display-thumb" style="background-image: url('{{artist.avatar}}')"></div>
+				</div>
+				<p class="more"><a href="http://localhost:3000/artist/{{artist.id}}" target="new">See More</a></p>
+			</div>
+			</li>
+		</ul>
+		
+		</div>
+	</section>
+	
+</body>

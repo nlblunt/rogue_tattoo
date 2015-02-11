@@ -26,4 +26,8 @@ class Artist < ActiveRecord::Base
     def delete_image(id)
     	self.images.destroy(id)
     end
+
+    def self.list
+    	return Artist.all
+    end
 end

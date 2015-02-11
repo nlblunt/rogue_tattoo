@@ -5,6 +5,7 @@
     "angular-route": "latest",
     "angular-resource": "latest",
     "angular-mocks": "latest",
+    "angular-dropdowns": "latest",
     "ng-file-upload": "latest"
   }
 }

@@ -92,6 +92,10 @@ class ArtistController < ApplicationController
         @images = Image.where(artist_id: @artist)
     end
     
+    def list
+        @artists = Artist.all
+    end
+
     private
     def artist_params
       params.require(:artist).permit(:avatar, :name, :bio, :facebook, :instagram, images_attributes: [:id, :img, :display, :artist_id])

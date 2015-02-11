@@ -21,5 +21,6 @@
 //= require directives/directives
 //= require services/services
 //= require controllers/controllers
+//= require angular-dropdowns/angular-dropdowns
 //= require_tree .
 //= require bootstrap-sprockets

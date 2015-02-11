@@ -32,4 +32,13 @@ describe Artist do
     artist.delete_image(img.id)
     expect(Image.count).to eq(0)
   end
+
+  it "returns a list of artists" do
+    Artist.destroy_all
+    FactoryGirl.create(:artist)
+    FactoryGirl.create(:artist)
+
+    list = Artist.list
+    expect(list.count).to eq(2)
+  end
 end
