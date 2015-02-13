@@ -26,6 +26,11 @@
 			templateUrl: "html/artists.html",
 			controller: "artistController"
 		})
+		.when('/view_artist/:id',
+		{
+			templateUrl: "html/artist.html",
+			controller: "view_artistController"
+		})
 		.otherwise({
 			redirectTo: '/'
 		});

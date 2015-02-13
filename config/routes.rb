@@ -12,7 +12,7 @@ RogueTattoo::Application.routes.draw do
   delete 'delete_admin' => 'home#delete_admin'
   get 'display_images' => 'home#display_images'
   get 'list' => 'artist#list'
-  
+
   resources :artist
   resources :makeupartist
   resources :image

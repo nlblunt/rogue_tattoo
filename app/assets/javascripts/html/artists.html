@@ -8,7 +8,6 @@
 				<li>Appointments</li>
 			</ul>
 		</nav>
-        <img src="images/header.png">
 	</header>
 
 	<section id="artists">
@@ -23,13 +22,14 @@
 					<p>{{artist.bio}}</p>
 				</div>
 				<div class="display-samples">
-					<div class="display-thumb" style="background-image: url('{{artist.avatar}}')"></div>
-					<div class="display-thumb" style="background-image: url('{{artist.avatar}}')"></div>
-					<div class="display-thumb" style="background-image: url('{{artist.avatar}}')"></div>
-					<div class="display-thumb" style="background-image: url('{{artist.avatar}}')"></div>
-					<div class="display-thumb" style="background-image: url('{{artist.avatar}}')"></div>
+					
+					<div ng-repeat="image in artist.images">
+						<div class="display-thumb" style="background-image: url('{{image.url}}')">
+						</div>
+					</div>
+					
 				</div>
-				<p class="more"><a href="http://localhost:3000/artist/{{artist.id}}" target="new">See More</a></p>
+				<p class="more"><a href="/view_artist/{{artist.id}}">See More</a></p>
 			</div>
 			</li>
 		</ul>

@@ -301,3 +301,54 @@ div.display-area
   clear: left;
   padding-left: 10px;
 }
+
+.profile-avatar
+{
+  width: 100%;
+}
+
+div#artist-profile
+{
+  width: 20%;
+  float: left;
+}
+
+div#artist-profile h1
+{
+  text-align: center;
+}
+
+div#portfolio
+{
+  width: 80%;
+  float: right;
+}
+
+div#port-thumbs
+{
+  width: 36%;
+  float: left;
+}
+
+div#port-thumbs li
+{
+  width: 31%;
+  margin: 1%;
+}
+
+.port-thumb
+{
+  width: 100%;
+  padding-bottom: 100%;
+  float: left;
+  background-size: cover;
+  list-style: none;
+}
+
+div#full-image
+{
+  float: right;
+  width: 64%;
+  outline: solid 1px silver;
+  height: 500px;
+}

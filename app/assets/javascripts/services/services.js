@@ -28,6 +28,7 @@ appServices.factory('artistFactory', ['$http', '$q', function($http, $q)
 {
 	var self = {};
 
+	//Get a list of all the artists
 	self.getArtistList = function()
 	{
 		var deferred = $q.defer();
@@ -41,6 +42,24 @@ appServices.factory('artistFactory', ['$http', '$q', function($http, $q)
 			function()
 			{
 				deferred.reject("Error getting artist list");
+			});
+		return deferred.promise;
+	};
+
+	//Get the artist info to display on the page
+	self.getArtist = function(id)
+	{
+		var deferred = $q.defer();
+
+		$http({method: 'GET', url: '/artist/' + id + '.json', format: 'json'})
+		.then(
+			function(data)
+			{
+				deferred.resolve(data);
+			},
+			function(data)
+			{
+				deferred.reject(data)
 			});
 		return deferred.promise;
 	};

@@ -4,7 +4,7 @@ json.array!(@artists) do |artist|
 	json.bio artist.bio
 	json.avatar url_for(artist.avatar.url(:medium))
 
-	json.images artist.images do |image|
+	json.images artist.images.last(10) do |image|
 		json.url url_for(image.img.url(:medium))
 	end
 end

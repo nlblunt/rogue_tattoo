@@ -19,3 +19,13 @@ appControllers.controller('artistController', ['$scope', 'artistFactory', functi
 		console.log(data);
 	});
 }]);
+
+appControllers.controller('view_artistController', ['$scope', '$routeParams', 'artistFactory', function($scope, $routeParams, artistFactory)
+{
+	console.log($routeParams.id);
+	artistFactory.getArtist($routeParams.id).then(function(data)
+	{
+		$scope.artist = data;
+		console.log(data)
+	});
+}]);

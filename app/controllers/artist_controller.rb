@@ -89,7 +89,12 @@ class ArtistController < ApplicationController
     def show
       #Shows the artist info page from the Artist link.  Also gets all images the artist has done
         @artist = Artist.find(params[:id])
-        @images = Image.where(artist_id: @artist)
+
+        respond_to do |format|
+            format.json {render :show}
+            format.html {render :nothing}
+        end
+       # @images = Image.where(artist_id: @artist)
     end
     
     def list

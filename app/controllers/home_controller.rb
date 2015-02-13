@@ -14,7 +14,7 @@ class HomeController < ApplicationController
   end
   
   def display_images
-    @images = Image.where(display: true)
+    @images = Image.where(display: true).limit(16)
 
     respond_to do |format|
       format.json {render :display}
