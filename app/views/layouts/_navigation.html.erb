@@ -1,0 +1,25 @@
+<%# navigation styled for Bootstrap 3.0 %>
+<nav class="navbar navbar-color">
+  <div class="nav-container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        Menu
+      </button>
+
+    </div>
+    <div class="collapse navbar-collapse">
+      <ul class="navbar-center">
+
+        <%= render 'layouts/navigation_links' %>
+      </ul>
+      
+      <ul class="nav navbar-nav navbar-right">
+      	<%if admin_signed_in? %>
+      		<%= link_to 'LogOut', destroy_admin_session_path, method: :delete %>
+      		<%= link_to 'Dashboard', dashboard_path %>
+      	<% end %>
+      </ul>
+    </div>
+  </div>
+</nav>

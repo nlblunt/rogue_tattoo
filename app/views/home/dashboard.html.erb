@@ -1,0 +1,46 @@
+<div class="row">
+    <h1 class="text-center">Rogue Tattoo Dashboard</h1>
+    <hr>
+</div>
+
+<div class="row">
+  <div class="col-md-4">
+  		<div class="panel panel-primary">
+  			<div class="panel-heading">News</div>
+  			<ul class="nav nav-stacked nav-pills">
+  			    <li><%= link_to "Add New News", new_newspost_path, :remote => true, :class => "alert-info" %></li>
+                <% @newsposts.each do |news| %>
+                <li><%= link_to news.heading, edit_newspost_path(news), :remote => true %></li>
+                <% end %>
+  			</ul>
+
+  		
+  		<div class="panel-heading">Artists</div>
+  		<ul class="nav nav-stacked nav-pills">
+  		  	<li><%= link_to "Add New Artist", new_artist_path, :class => "alert-info", :remote => true %></li>
+  		    <% @artists.each do |artist| %>
+  		    <li><%= link_to artist.name, edit_artist_path(artist), :remote => true %></li>
+  		    <% end %>
+  		</ul>
+  		
+      <div class="panel-heading">Makeup Artists</div>
+      <ul class="nav nav-stacked nav-pills">
+        <li><%= link_to "Add New Makeup Artist", new_makeupartist_path, :class => "alert-info", :remote => true %></li>
+        <% @makeupartists.each do |m_artist| %>
+        <li><%= link_to m_artist.name, edit_makeupartist_path(m_artist), :remote => true %></li>
+        <% end %>
+  		</ul>
+
+      <div class="panel-heading">Site Admin</div>
+      <ul class="nav nav-stacked nav-pills">
+        <li><%= link_to "About us", edit_about_us_path, :remote => true %></li>
+        <li><%= link_to "Admin Users", edit_admins_path, :remote => true %></li>
+        <li><%= link_to "Admin Images", admin_edit_images_path, :remote => true %></li>
+      </ul>
+      </div>
+  </div>
+ 		
+ 		<div class="col-md-8">
+ 			<div id="content">
+ 		</div>
+</div>

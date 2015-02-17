@@ -1,0 +1,77 @@
+<head>
+  <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+              m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-58546449-2', 'auto');
+      ga('send', 'pageview');
+
+  </script>
+</head>
+<body class="body-main">
+<%= render '/layouts/navigation' %>
+<div class = "row">
+    <div class="col-md-4">
+        <%= image_tag(@artist.avatar.url(:medium)) %>        
+    </div>
+    
+    <div class="col-md-8">
+        <h2>
+            <%= @artist.name %>    
+        </h2>
+
+        <div>
+            <%= @artist.bio %>
+        </div>
+
+        <% if @artist.facebook != ""%>
+        <div>
+        	<%= link_to "See me on Facebook", @artist.facebook %>
+        </div>
+        <% end %>
+
+        <% if @artist.instagram != ""%>
+        <div>
+        	<%= link_to "Instagram", @artist.instagram %>
+        </div>
+        <% end %>
+    </div>
+</div>
+
+
+
+<div class="row">
+<h1 class="text-center">Tattoos created by <%= @artist.name %></h1>
+
+		<div id="show-images">
+			<div id="container">
+
+				<!-- Start Advanced Gallery Html Containers -->
+				<div id="gallery" class="content">
+					<div id="controls" class="controls"></div>
+					<div class="slideshow-container">
+						<div id="loading" class="loader"></div>
+						<div id="slideshow" class="slideshow"></div>
+					</div>
+					<div id="caption" class="caption-container"></div>
+				</div>
+				<div id="thumbs" class="navigation">
+					<ul class="thumbs noscript">
+						<% @images.each do |img| %>
+						<li>
+							<%= link_to image_tag(img.img.url(:thumb)), img.img.url(:medium), :class => "thumb" %>
+						</li>
+    					<% end %>
+					</ul>
+				</div>
+				<div style="clear: both;"></div>
+			</div>
+		</div>
+		
+<script>
+	$(document).on("page:change", InitGallery());
+</script>
+</div>
+</body>

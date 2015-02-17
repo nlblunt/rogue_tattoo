@@ -1,0 +1,71 @@
+<head>
+  <title>Rogue Tattoo: Southern Oregon Tattoo Shop</title>
+  <meta name="description" content="Rogue Tattoo, a tattoo shop serving Southern Oregon, including Ashland, Medford, Grants Pass, and everywhere in between.  Owner Josh Ludlow.">
+  <meta name="author" contents="Rubywebs.net">
+</head>
+
+<body class="body-main" ng-controller="homeController as homeCtrl">
+	<header>
+		<nav>
+			<ul>
+				<li><a href="/">Home</a></li>
+				<li><a href="#">Artist</a></li>
+				<li>Cosmetic</li>
+				<li>Appointments</li>
+			</ul>
+		</nav>
+        <img src="images/header.png">
+	</header>
+
+	<section id="main">
+		<div id="displays">
+            <ul>
+                <li class="list-display" ng-repeat="data in display.data">
+                    <div class="display" style="background-image: url('{{data.image}}');">
+
+                    </div>
+                </li>
+            </ul>
+		</div>
+
+        <article id="featured-artist">
+            <section id="samples">
+                <img src=images/logo.jpg id="location">
+            </section>
+        </article>
+    </section>
+
+    <section id="about">
+        <p>Rogue Tattoo is the most awesome tattoo place in Southern Oregon!  We do tattoos and cosmetic makeup and piercings and stuff.  We even clean our tools!  Come and see us today!
+        </p>
+
+    </section>
+
+    <section id="news">
+        <h1>Latest news here</h1>
+
+        <ul>
+            <li class="news-item">
+                <div class="date">01/01/2015</div>
+                <div class="title">Sample News Article Title</div>
+                <div class="news-content">
+                    Sample News Sample News Sample News Sample News Sample News Sample News Sample News Sample News Sample News Sample News Sample News Sample News Sample News
+                </div>
+            </li>
+        </ul>
+    </section>
+
+    <footer>
+        <ul>
+            <li id="address">
+                <address>1122 Crater Lake Hwy, Medford OR 97415</address>
+            </li>
+            <li id="phone">
+                Phone: 511-111-1111
+            </li>
+            <li id="hours">
+                Hours: Monday - Saturday: 9AM - 6PM
+            </li>
+        </ul>
+    </footer>
+</body>

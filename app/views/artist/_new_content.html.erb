@@ -1,0 +1,39 @@
+Add new artist
+<div class='row'>
+    <div class='col-md-6'>
+        
+        <%= form_for @artist, url: artist_index_path, :html => { :multipart => true } do |a| %>
+        <div class="form-group">
+            <label>Name</label>
+            <%= a.text_field :name, class: 'form-control' %>
+        </div>
+
+        <div class='form-group'>
+            <label>Bio</label>
+            <%= a.text_area :bio, class: 'form-control' %>
+        </div>
+        
+        <div class='form-group'>
+            <label>Facebook</label>
+            <%= a.text_field :facebook, class: 'form-control' %>
+        </div>
+
+        <div class='form-group'>
+            <label>Instagram</label>
+            <%= a.text_field :instagram, class: 'form-control' %>
+        </div>
+
+        <div class='form-group'>
+            <label>Choose Image</label>
+            <%= a.file_field :avatar %>
+        </div>
+        <div class='form-group'>
+            <%= a.submit %>
+        </div>
+        <% end %>
+    </div>
+    
+    <div class='col-md-6'>
+        
+    </div>
+</div>
