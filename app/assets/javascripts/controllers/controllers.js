@@ -22,10 +22,17 @@ appControllers.controller('artistController', ['$scope', 'artistFactory', functi
 
 appControllers.controller('view_artistController', ['$scope', '$routeParams', 'artistFactory', function($scope, $routeParams, artistFactory)
 {
-	console.log($routeParams.id);
+    
 	artistFactory.getArtist($routeParams.id).then(function(data)
 	{
 		$scope.artist = data;
-		console.log(data)
+		$scope.fullsize = data.data.images[0].url;
+		console.log(data);
 	});
+
+	$scope.setFullImage = function(url)
+	{
+		console.log(url);
+		$scope.fullsize = url;
+	}
 }]);

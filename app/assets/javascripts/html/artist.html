@@ -4,30 +4,32 @@
 		<nav>
 			<ul>
 				<li><a href="/">Home</a></li>
-				<li><a href="/artists">Artist</a></li>
-				<li>Cosmetic</li>
+				<li><a href="/artists">Artists</a></li>
+				<li><a href="http://www.permanentmakeupbybritta.com" target="new">Permanent Makeup</a></li>
 				<li>Appointments</li>
 			</ul>
 		</nav>
 	</header>
 
+	<h1 class="text-center">{{artist.data.name}}</h1>
 	<div id="artist-profile">
 		<img class="profile-avatar" ng-src={{artist.data.avatar}}/>
-		<h1>{{artist.data.name}}</h1>
 	</div>
 
 	<div id="portfolio">
 		<div id="port-thumbs">
 			<ul>
-				<li class="port-thumb" ng-repeat="image in artist.data.images">
+				<li class="thumb-list" ng-repeat="image in artist.data.images">
+					<a href ng-click='setFullImage(image.url)'>
 					<div class="port-thumb" style="background-image: url('{{image.url}}')">
 					</div>
+					</a>
 				</li>
 			</ul>
 		</div>
 
 		<div id="full-image">
-
+			<img ng-src={{fullsize}} alt="Full Size Preview" />
 		</div>
 	</div>
 </body>
