@@ -25,13 +25,13 @@
           	{
             // if we were passed in a search param, and it has a path
             // to redirect to, then redirect to that path
-            return "/" + search.goto
+            return "/" + search.goto;
           	}
           	else
           	{
             // else just redirect back to this location
             // angular is smart enough to only do this once.
-            return "/"
+            return "/";
           	}
         	}
 		})
