@@ -10,3 +10,5 @@ sudo chown -R daemon:daemon public
 echo "Resetting permission for tmp folder"
 sudo chown -R daemon:daemon tmp
 echo "Updating completed"
+sudo touch /tmp/restart.txt
+echo "Phusion Passenger restarted"
