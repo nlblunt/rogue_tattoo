@@ -151,6 +151,9 @@ GEM
     pg (0.18.1)
     pg (0.18.1-x64-mingw32)
     pg (0.18.1-x86-mingw32)
+    prerender_rails (1.1.2)
+      activesupport
+      rack
     pry (0.10.1)
       coderay (~> 1.1.0)
       method_source (~> 0.8.1)
@@ -293,6 +296,7 @@ DEPENDENCIES
   launchy
   paperclip
   pg
+  prerender_rails
   rails (= 4.1.6)
   rails_12factor
   rails_layout

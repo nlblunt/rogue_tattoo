@@ -28,6 +28,7 @@ group :production do
   gem 'pg'
   gem 'aws-sdk'
   gem 'rails_12factor'
+  gem 'prerender_rails'
 end
 
 

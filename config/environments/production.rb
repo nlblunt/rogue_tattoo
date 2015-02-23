@@ -1,6 +1,8 @@
 RogueTattoo::Application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
-
+  # Prerender.io
+  config.middleware.use Rack::Prerender, prerender_token: 'A2RvmvbUL8euqTkekpFZ'
+  
   # Code is not reloaded between requests.
   config.cache_classes = true
 
