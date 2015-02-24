@@ -1,5 +1,6 @@
 class HomeController < ApplicationController
   def index
+      #redirect_to "http://www.google.com"
       #Called for homepage.
       
       #Get todays date.  This is needed to show only news that the current date is between
