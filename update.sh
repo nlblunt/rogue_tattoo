@@ -12,5 +12,5 @@ sudo chown -R daemon:daemon tmp
 echo "Resetting permission for logs"
 sudo chown -R daemon:daemon log
 echo "Updating completed"
-sudo touch /tmp/restart.txt
-echo "Phusion Passenger restarted"
+sudo /stack/ctlscript.sh restart apache
+echo "Apache restarted"
