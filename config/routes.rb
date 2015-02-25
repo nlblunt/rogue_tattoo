@@ -5,7 +5,7 @@ RogueTattoo::Application.routes.draw do
   delete 'delete_admin' => 'home#delete_admin'
   get 'display_images' => 'home#display_images'
   get 'list' => 'artist#list'
-  get 'artist/:id' => redirect('http://www.rogue-tattoo.com/#!/view_artist/:id')
+  #get 'artist/:id' => redirect('http://www.rogue-tattoo.com/#!/view_artist/:id')
   
   resources :artist
   resources :makeupartist
