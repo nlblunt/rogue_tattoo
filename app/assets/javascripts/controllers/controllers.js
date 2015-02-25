@@ -20,7 +20,7 @@ appControllers.controller('artistController', ['$scope', 'artistFactory', functi
 	});
 }]);
 
-appControllers.controller('view_artistController', ['$scope', '$routeParams', 'artistFactory', function($scope, $routeParams, artistFactory)
+appControllers.controller('view_artistController', ['$scope', '$routeParams', 'artistFactory', '$analytics', function($scope, $routeParams, artistFactory, $analytics)
 {
     
 	artistFactory.getArtist($routeParams.id).then(function(data)
@@ -32,7 +32,7 @@ appControllers.controller('view_artistController', ['$scope', '$routeParams', 'a
 
 	$scope.setFullImage = function(url)
 	{
-		console.log(url);
+		$analytics.eventTrack('ClickFullImage', {catagory: 'Tattoo'});
 		$scope.fullsize = url;
 	}
 }]);
