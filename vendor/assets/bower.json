@@ -6,6 +6,7 @@
     "angular-resource": "latest",
     "angular-mocks": "latest",
     "angular-dropdowns": "latest",
-    "ng-file-upload": "latest"
+    "ng-file-upload": "latest",
+    "angulartics": "latest"
   }
 }

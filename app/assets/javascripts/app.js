@@ -8,7 +8,8 @@
 			'appControllers',
 			'appServices',
 			'appDirectives',
-			'ngDropdowns'
+			'angulartics',
+			'angulartics.google.analytics'
 		]);
 
 	roguetattoo.config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider)
