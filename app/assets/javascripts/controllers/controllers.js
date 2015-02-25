@@ -32,7 +32,7 @@ appControllers.controller('view_artistController', ['$scope', '$routeParams', 'a
 
 	$scope.setFullImage = function(url)
 	{
-		$analytics.eventTrack('ClickFullImage', {catagory: 'Tattoo'});
+		//$analytics.eventTrack('ClickFullImage', {catagory: 'Tattoo'});
 		$scope.fullsize = url;
 	}
 }]);
