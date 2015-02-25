@@ -21,6 +21,7 @@
 //= require directives/directives
 //= require services/services
 //= require controllers/controllers
-//= require angular-dropdowns/angular-dropdowns
+//= require angulartics/dist/angulartics.min
+//= require angulartics/dist/angulartics-ga.min
 //= require_tree .
 //= require bootstrap-sprockets
