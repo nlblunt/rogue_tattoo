@@ -12,5 +12,5 @@ sudo chown -R daemon:daemon tmp
 echo "Resetting permission for logs"
 sudo chown -R daemon:daemon log
 echo "Updating completed"
-sudo /stack/ctlscript.sh restart apache
+sudo ~/stack/ctlscript.sh restart apache
 echo "Apache restarted"
