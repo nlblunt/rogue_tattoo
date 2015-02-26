@@ -1,6 +1,6 @@
 {
   "name": "angular-dropdowns",
-  "version": "0.5.0",
+  "version": "1.0.0",
   "homepage": "https://github.com/jseppi/angular-dropdowns",
   "authors": [
     "James Seppi <james.seppi@gmail.com> (http://github.com/jseppi)",
@@ -27,11 +27,11 @@
     "example"
   ],
   "license": "MIT",
-  "_release": "0.5.0",
+  "_release": "1.0.0",
   "_resolution": {
     "type": "version",
-    "tag": "v0.5.0",
-    "commit": "11bce74e02cbf4088fb1de6a4b0f13f396321b72"
+    "tag": "v1.0.0",
+    "commit": "2951b9427a9612c001341e40dc3e70adbec64a26"
   },
   "_source": "git://github.com/jseppi/angular-dropdowns.git",
   "_target": "*",
