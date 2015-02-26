@@ -1,14 +1,14 @@
 {
   "name": "dsl-generated dependencies",
   "dependencies": {
+    "bootstrap": "latest",
     "angular": "latest",
     "angular-route": "latest",
     "angular-resource": "latest",
     "angular-mocks": "latest",
     "angular-dropdowns": "latest",
     "ng-file-upload": "latest",
-    "angulartics": "latest"
-  },
-  "resolutions": {
+    "angulartics": "latest",
+    "angular-ui": "latest"
   }
 }
