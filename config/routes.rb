@@ -6,7 +6,7 @@ RogueTattoo::Application.routes.draw do
   get 'display_images' => 'home#display_images'
   get 'list' => 'artist#list'
   get 'show_artist/:id' => 'artist#show'
-  get 'artist/:id' => redirect('http:www.rogue-tattoo.com/#!/view_artist/%{id}')
+  get 'artist/:id' => redirect('http://www.rogue-tattoo.com/#!/view_artist/%{id}')
   
   resources :artist
   resources :makeupartist
