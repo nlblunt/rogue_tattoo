@@ -51,7 +51,7 @@ appServices.factory('artistFactory', ['$http', '$q', function($http, $q)
 	{
 		var deferred = $q.defer();
 
-		$http({method: 'GET', url: '/artist/' + id + '.json', format: 'json'})
+		$http({method: 'GET', url: '/show_artist/' + id + '.json', format: 'json'})
 		.then(
 			function(data)
 			{

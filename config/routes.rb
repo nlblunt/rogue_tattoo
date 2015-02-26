@@ -5,14 +5,15 @@ RogueTattoo::Application.routes.draw do
   delete 'delete_admin' => 'home#delete_admin'
   get 'display_images' => 'home#display_images'
   get 'list' => 'artist#list'
-  #get 'artist/:id' => redirect('http://www.rogue-tattoo.com/#!/view_artist/:id')
+  get 'show_artist/:id' => 'artist#show'
+  get 'artist/:id' => redirect('http:www.rogue-tattoo.com/#!/view_artist/%{id}')
   
   resources :artist
   resources :makeupartist
   resources :image
   resources :makeupimage
   resources :newspost
-  
+  #!/
   devise_for :admins
   
   #devise_scope :admin do
