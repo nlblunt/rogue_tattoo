@@ -24,4 +24,4 @@
 //= require angulartics/dist/angulartics.min
 //= require angulartics/dist/angulartics-ga.min
 //= require_tree .
-//= require bootstrap-sprockets
+// require bootstrap-sprockets
