@@ -14,8 +14,8 @@
 
 	roguetattoo.config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider)
 	{
-		//$locationProvider.html5Mode(true);
-		$locationProvider.hashPrefix('!');
+		$locationProvider.html5Mode(true);
+		//$locationProvider.hashPrefix('!');
 
 		$routeProvider
 		.when('/',
@@ -35,7 +35,7 @@
 			controller: "view_artistController"
 		})
 		.otherwise({
-			redirectTo: '/#!'
+			redirectTo: '/'
 		});
 	}]);
 
