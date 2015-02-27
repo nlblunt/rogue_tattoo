@@ -14,8 +14,18 @@ class HomeController < ApplicationController
 
   end
   
+  def news_articles
+    @news = Newspost.show_news
+
+    respond_to do |format|
+      format.json {render json: @news}
+    end
+  end
+
   def display_images
-    @images = Image.where(display: true).limit(16)
+    #Gets 16 images for homepage samples
+    #@images = Image.where(display: true).limit(16)
+    @images = Image.where(display: true).last(16)
 
     respond_to do |format|
       format.json {render :display}

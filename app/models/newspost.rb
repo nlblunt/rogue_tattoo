@@ -4,4 +4,8 @@ class Newspost < ActiveRecord::Base
     
     validates :heading, presence: true
     validates :body, presence: true
+
+    def self.show_news
+    	return Newspost.where("DATE(?) BETWEEN start_date AND end_date", Date.today)
+    end
 end

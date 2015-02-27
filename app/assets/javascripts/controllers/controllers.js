@@ -13,6 +13,11 @@ appControllers.controller('homeController', ['$scope', '$interval', 'homeFactory
 	{
 		$scope.display = data;
 	});
+
+	homeFactory.displayNewsposts().then(function(data)
+	{
+		$scope.newsposts = data;
+	});
 }]);
 
 appControllers.controller('artistController', ['$scope', 'artistFactory', function($scope, artistFactory)

@@ -23,25 +23,21 @@
 		</div>
 
         <article id="greetings">
-            <section id="samples">
+            <section id="rogue-info">
+                        <h1>Rogue Tattoo</h1>
                         <p>Rogue Tattoo, a tattoo shop serving Southern Oregon, including Ashland, Medford, and Grants Pass.  Rogue Tattoo offers traditional, realism, tribal, black and grey, and Japanese tattoos, as well as Permanent Makeup.  Appointments prefered, but walk-ins welcome.
                         </p>
             </section>
+
+            <section id="news">
+            <ul>
+                <li ng-repeat="news in newsposts.data">
+                    <h1>{{news.heading}}</h1>
+                    <p>{{news.body}}</p>
+                </li>
+            </ul>
+            </section>
         </article>
-    </section>
-
-    <section id="news">
-        <h1>Latest news here</h1>
-
-        <ul>
-            <li class="news-item">
-                <div class="date">01/01/2015</div>
-                <div class="title">Sample News Article Title</div>
-                <div class="news-content">
-                    
-                </div>
-            </li>
-        </ul>
     </section>
 
     <footer>

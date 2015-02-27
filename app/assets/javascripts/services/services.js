@@ -21,6 +21,23 @@ appServices.factory('homeFactory', ['$resource', '$http', '$q', function($resour
 		return deferred.promise;
 	};
 
+	self.displayNewsposts = function()
+	{
+		var deferred = $q.defer();
+
+		$http({method: 'GET', url: '/news_articles.json', format: 'json'})
+		.then(
+			function(data)
+			{
+				deferred.resolve(data);
+			},
+			function()
+			{
+				deferred.reject("Error");
+			});
+		return deferred.promise;
+	};
+	
 	return self;
 }]);
 

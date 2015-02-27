@@ -4,6 +4,7 @@ RogueTattoo::Application.routes.draw do
   get 'admin_edit_images' => 'home#admin_edit_images'
   delete 'delete_admin' => 'home#delete_admin'
   get 'display_images' => 'home#display_images'
+  get 'news_articles' => 'home#news_articles'
   get 'list' => 'artist#list'
   get 'show_artist/:id' => 'artist#show'
   get 'artist/:id' => redirect('http://www.rogue-tattoo.com/#!/view_artist/%{id}')

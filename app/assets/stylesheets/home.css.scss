@@ -2,14 +2,7 @@ body *
 {
   margin: 0px;
   padding: 0px;
-  color: white;
   position: relative;
-
-
-
-
-  //display: block;
-  //text-align: left;
 }
 
 body
@@ -17,7 +10,7 @@ body
   background-color: black;
   position: relative;
   max-width: 1400px;
-  min-width: 400px;
+  min-width: 600px;
   margin-left: auto;
   margin-right: auto;
   background-image: image_url("bg.jpg"); //url(images/bg.jpg);
@@ -104,6 +97,11 @@ header nav ul li
   list-style: none;
 }
 
+header nav ul li a
+{
+  text-decoration: none;
+  color: red;
+}
 header nav ul li:hover
 {
   background-color: rgb(30,30,30);
@@ -111,9 +109,8 @@ header nav ul li:hover
 
 section#main
 {
-  background-color: rgb(40,40,40);
   width: 80%;
-  max-height: 500px;
+  height: 500px;
   margin-left: 10%;
   margin-right: 10%;
 }
@@ -138,13 +135,31 @@ article#greetings
 {
   float: left;
   width: 30%;
-  max-height: 1000px;
+  height: 500px;
+  overflow-y: auto;
   background-color: rgba(0,0,0,0.75);
+
 }
 
-section#samples
+article#greetings p
+{
+  text-align: justify;
+  color: white;
+}
+
+section#rogue-info
 {
   margin-top: 0%;
+  margin-bottom: 5px;
+  border-bottom: groove 3px red;
+}
+
+section#rogue-info h1
+{
+  text-align: center;
+  font-size: 24px;
+  color: red;
+  margin-bottom: 3px;
 }
 
 section#about
@@ -159,18 +174,21 @@ section#about
 
 section#news
 {
-  display: none;
   clear: left;
-  width: 80%;
-  margin-top: 20px;
-  margin-left: 10%;
-  margin-right: 10%;
+  width: 100%;
+  margin-top: 10px;
+}
+
+section#news li
+{
+  margin-bottom: 10px;
 }
 
 section#news h1
 {
   text-align: center;
-  border-bottom: groove 3px grey;
+  color: red;
+  border-bottom: groove 2px silver;
 }
 
 li.news-item
@@ -207,9 +225,13 @@ div.news-content
 footer
 {
   width: 80%;
-  margin-top: 20px;
+  height: 20px;
   margin-left: 10%;
   margin-right: 10%;
+  color: red;
+  background-color: rgb(40,40,40);
+  border-top: solid 2px silver;
+  border-bottom: solid 2px silver;
 }
 
 footer ul
@@ -220,7 +242,6 @@ footer ul
 footer ul li
 {
   float: left;
-  //margin-right: 20px;
   display: block;
 }
 
@@ -367,4 +388,10 @@ div#full-image img
 .text-center
 {
   text-align: center;
+}
+
+
+div#dashboard
+{
+  color: red;
 }
