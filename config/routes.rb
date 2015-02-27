@@ -26,5 +26,5 @@ RogueTattoo::Application.routes.draw do
   root 'home#index'
 
   #get '*path' => redirect('/')
-  get "/*path" => redirect("/?goto=%{path}")
+  #get "/*path" => redirect("/?goto=%{path}")
 end
