@@ -267,12 +267,31 @@ section#artists
   margin-left: 10%;
   margin-right: 10%;
   background-color: rgba(0,0,0,0.5);
+  border-radius: 5px;
+}
+
+section#artists h1
+{
+  color: red;
+}
+
+section#artists p
+{
+  color: white;
+}
+
+section#artists a
+{
+  color: white;
+  text-decoration: none;
+  border-bottom: solid 1px white;
 }
 
 li.display-artist
 {
   list-style: none;
   margin-bottom: 10px;
+  border: solid 1px red;
 }
 
 div.display-area
@@ -339,6 +358,13 @@ div#artist-profile
 div#artist-profile h1
 {
   text-align: center;
+}
+
+div#artist-profile .social-media
+{
+  width: 20%;
+  margin: 2.5%;
+  float: left;
 }
 
 div#portfolio
