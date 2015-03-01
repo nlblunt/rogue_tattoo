@@ -20,7 +20,7 @@
 		<div id="port-thumbs">
 			<ul>
 				<li class="thumb-list" ng-repeat="image in artist.data.images">
-					<a href analytics-on="click" analytics-event="ClickFullImage" ng-click='setFullImage(image.url)'>
+					<a href analytics-on="ng-click" analytics-event="ClickFullImage" ng-click='setFullImage(image.url)'>
 					<div class="port-thumb" style="background-image: url('{{image.url}}')">
 					</div>
 					</a>
