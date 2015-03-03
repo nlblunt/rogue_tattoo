@@ -3,5 +3,7 @@ rvm:
   - 2.0.0
   
 before_install:
-bin/rake db:migrate RAILS_ENV=test
   - gem install selenium-webdriver
+
+script:
+  - bundle exec rake db:test:prepare
