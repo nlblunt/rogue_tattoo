@@ -26,7 +26,7 @@ gem 'spring',        group: :development
 
 group :production do
   gem 'pg'
-  gem 'aws-sdk'
+  gem 'aws-sdk', '<2.0'
   gem 'rails_12factor'
   gem 'prerender_rails'
 end
