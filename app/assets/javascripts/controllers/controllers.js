@@ -3,7 +3,7 @@ var appControllers = angular.module('appControllers', ['appServices']);
 appControllers.controller('homeController', ['$scope', '$interval', 'homeFactory', function($scope, $interval, homeFactory)
 {
 	//Set page description
-	$scope.$root.metadescription = "Rogue Tattoo, a tattoo shop serving Southern Oregon, including Ashland, Medford, Grants Pass, and everywhere in between.  Owner Josh Ludlow."; 
+	$scope.$root.metadescription = "Rogue Tattoo, a tattoo shop serving the Rogue Valley in Southern Oregon, including Ashland, Medford, Grants Pass, and everywhere in between.  Owner Josh Ludlow."; 
 	
 	//Set page title
 	$scope.$root.display_title = "Rogue Tattoo - Medford and Southern Oregon - Tattoo and Piercings";
@@ -23,7 +23,7 @@ appControllers.controller('homeController', ['$scope', '$interval', 'homeFactory
 appControllers.controller('artistController', ['$scope', 'artistFactory', function($scope, artistFactory)
 {
 	//Set page description
-	$scope.$root.metadescription = "Tattoo Artists currently at Rogue Tattoo.  Serving Southern Oregon, including Ashland, Medford, and Grants Pass.";
+	$scope.$root.metadescription = "Tattoo Artists currently at Rogue Tattoo.  Serving the Rogue Valley, including Ashland, Medford, and Grants Pass.";
 	
 	//Set page title
 	$scope.$root.display_title = "Rogue Tattoo - Medford and Southern Oregon - Artists";
@@ -45,10 +45,10 @@ appControllers.controller('view_artistController', ['$scope', '$routeParams', 'a
 		$scope.fullsize = data.data.images[0].url;
 		
 		//Set page description
-		$scope.$root.metadescription = "Rogue Tattoo - Medford and Southern Oregon - " + data.data.name + "'s tattoo gallery.";
+		$scope.$root.metadescription = "Rogue Tattoo - Medford and Southern Oregon - " + data.data.name + "'s Tattoo Portfolio.";
 
 		//Set page Title
-		$scope.$root.display_title = "Rogue Tattoo - Medford and Southern Oregon - " + data.data.name + "'s Tattoo Gallery";
+		$scope.$root.display_title = "Rogue Tattoo - Medford and Southern Oregon - " + data.data.name + "'s Tattoo Portfolio";
 
 	});
 
