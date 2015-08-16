@@ -14,7 +14,7 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require angular/angular
-//= require ng-file-upload/angular-file-upload
+//= require ng-file-upload/ng-file-upload
 //= require angular-route/angular-route
 //= require angular-rails-templates
 //= require angular-resource/angular-resource
