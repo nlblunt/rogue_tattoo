@@ -86,8 +86,8 @@ RogueTattoo::Application.configure do
   :s3_credentials => 
   {
     :bucket => 'rogue-tattoo', #ENV['S3_BUCKET_NAME_TATTOO'],
-    :access_key_id => ENV['AWS_ACCESS_KEY_ID'],
-    :secret_access_key => ENV['AWS_SECRET_ACCESS_KEY'],
+    :access_key_id => ENV['aws_access_key_id'],
+    :secret_access_key => ENV['aws_secret_key'],
     :s3_host_name => 's3-us-west-2.amazonaws.com'
   }
   }
