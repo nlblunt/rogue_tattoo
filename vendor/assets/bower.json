@@ -9,6 +9,7 @@
     "angular-dropdowns": "latest",
     "ng-file-upload": "latest",
     "angulartics": "latest",
+    "angulartics-google-analytics": "latest",
     "angular-ui": "latest"
   }
 }

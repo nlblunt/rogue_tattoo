@@ -22,5 +22,6 @@
 //= require services/services
 //= require controllers/controllers
 //= require angulartics/dist/angulartics.min
+//= require angulartics-google-analytics/dist/angulartics-google-analytics.min
 //= require_tree .
 // require bootstrap-sprockets
