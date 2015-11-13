@@ -9,7 +9,7 @@
 			'appServices',
 			'appDirectives',
 			'angulartics',
-			//'angulartics.google.analytics'
+			'angulartics.google.analytics'
 		]);
 
 	roguetattoo.config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider)
