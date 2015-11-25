@@ -50,7 +50,7 @@ CREATE TABLE admins (
 );
 
 
-ALTER TABLE public.admins OWNER TO rails;
+ALTER TABLE admins OWNER TO rails;
 
 --
 -- Name: admins_id_seq; Type: SEQUENCE; Schema: public; Owner: rails
@@ -64,7 +64,7 @@ CREATE SEQUENCE admins_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.admins_id_seq OWNER TO rails;
+ALTER TABLE admins_id_seq OWNER TO rails;
 
 --
 -- Name: admins_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: rails
@@ -93,7 +93,7 @@ CREATE TABLE artists (
 );
 
 
-ALTER TABLE public.artists OWNER TO rails;
+ALTER TABLE artists OWNER TO rails;
 
 --
 -- Name: artists_id_seq; Type: SEQUENCE; Schema: public; Owner: rails
@@ -107,7 +107,7 @@ CREATE SEQUENCE artists_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.artists_id_seq OWNER TO rails;
+ALTER TABLE artists_id_seq OWNER TO rails;
 
 --
 -- Name: artists_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: rails
@@ -129,7 +129,7 @@ CREATE TABLE clients (
 );
 
 
-ALTER TABLE public.clients OWNER TO rails;
+ALTER TABLE clients OWNER TO rails;
 
 --
 -- Name: clients_id_seq; Type: SEQUENCE; Schema: public; Owner: rails
@@ -143,7 +143,7 @@ CREATE SEQUENCE clients_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.clients_id_seq OWNER TO rails;
+ALTER TABLE clients_id_seq OWNER TO rails;
 
 --
 -- Name: clients_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: rails
@@ -170,7 +170,7 @@ CREATE TABLE images (
 );
 
 
-ALTER TABLE public.images OWNER TO rails;
+ALTER TABLE images OWNER TO rails;
 
 --
 -- Name: images_id_seq; Type: SEQUENCE; Schema: public; Owner: rails
@@ -184,7 +184,7 @@ CREATE SEQUENCE images_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.images_id_seq OWNER TO rails;
+ALTER TABLE images_id_seq OWNER TO rails;
 
 --
 -- Name: images_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: rails
@@ -213,7 +213,7 @@ CREATE TABLE makeupartists (
 );
 
 
-ALTER TABLE public.makeupartists OWNER TO rails;
+ALTER TABLE makeupartists OWNER TO rails;
 
 --
 -- Name: makeupartists_id_seq; Type: SEQUENCE; Schema: public; Owner: rails
@@ -227,7 +227,7 @@ CREATE SEQUENCE makeupartists_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.makeupartists_id_seq OWNER TO rails;
+ALTER TABLE makeupartists_id_seq OWNER TO rails;
 
 --
 -- Name: makeupartists_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: rails
@@ -252,7 +252,7 @@ CREATE TABLE makeupimages (
 );
 
 
-ALTER TABLE public.makeupimages OWNER TO rails;
+ALTER TABLE makeupimages OWNER TO rails;
 
 --
 -- Name: makeupimages_id_seq; Type: SEQUENCE; Schema: public; Owner: rails
@@ -266,7 +266,7 @@ CREATE SEQUENCE makeupimages_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.makeupimages_id_seq OWNER TO rails;
+ALTER TABLE makeupimages_id_seq OWNER TO rails;
 
 --
 -- Name: makeupimages_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: rails
@@ -290,7 +290,7 @@ CREATE TABLE newsposts (
 );
 
 
-ALTER TABLE public.newsposts OWNER TO rails;
+ALTER TABLE newsposts OWNER TO rails;
 
 --
 -- Name: newsposts_id_seq; Type: SEQUENCE; Schema: public; Owner: rails
@@ -304,7 +304,7 @@ CREATE SEQUENCE newsposts_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.newsposts_id_seq OWNER TO rails;
+ALTER TABLE newsposts_id_seq OWNER TO rails;
 
 --
 -- Name: newsposts_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: rails
@@ -322,7 +322,7 @@ CREATE TABLE schema_migrations (
 );
 
 
-ALTER TABLE public.schema_migrations OWNER TO rails;
+ALTER TABLE schema_migrations OWNER TO rails;
 
 --
 -- Name: stories; Type: TABLE; Schema: public; Owner: rails; Tablespace: 
@@ -341,7 +341,7 @@ CREATE TABLE stories (
 );
 
 
-ALTER TABLE public.stories OWNER TO rails;
+ALTER TABLE stories OWNER TO rails;
 
 --
 -- Name: stories_id_seq; Type: SEQUENCE; Schema: public; Owner: rails
@@ -355,7 +355,7 @@ CREATE SEQUENCE stories_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.stories_id_seq OWNER TO rails;
+ALTER TABLE stories_id_seq OWNER TO rails;
 
 --
 -- Name: stories_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: rails
@@ -425,8 +425,8 @@ ALTER TABLE ONLY stories ALTER COLUMN id SET DEFAULT nextval('stories_id_seq'::r
 --
 
 COPY admins (id, email, encrypted_password, reset_password_token, reset_password_sent_at, remember_created_at, sign_in_count, current_sign_in_at, last_sign_in_at, current_sign_in_ip, last_sign_in_ip, created_at, updated_at) FROM stdin;
-1	nicolas.blunt@gmail.com	$2a$10$LvYyaV9aORC6eMJUr69/q.EI0Mn1PR2i8M9r1aoCTRBrNZ1liscby	\N	\N	\N	20	2015-06-24 19:01:51.761924	2015-03-10 03:59:38.655272	70.210.149.128	75.142.18.52	2014-05-15 00:47:49.926235	2015-06-24 19:01:51.820675
-2	ludlowbuilt@gmail.com	$2a$10$x14CezOK8osfpoEY0e.36.Drhr3KNnWZTDVV2jSydGrsY9QYA//9S	\N	\N	\N	29	2015-08-04 00:36:17.89121	2015-06-13 22:36:55.225303	71.92.131.45	68.116.45.57	2014-05-16 22:14:37.04714	2015-08-04 00:36:17.929348
+1	nicolas.blunt@gmail.com	$2a$10$LvYyaV9aORC6eMJUr69/q.EI0Mn1PR2i8M9r1aoCTRBrNZ1liscby	\N	\N	\N	23	2015-08-27 16:41:37.470064	2015-08-25 22:51:01.948056	75.142.18.52	68.116.53.98	2014-05-15 00:47:49.926235	2015-08-27 16:41:37.471479
+2	ludlowbuilt@gmail.com	$2a$10$x14CezOK8osfpoEY0e.36.Drhr3KNnWZTDVV2jSydGrsY9QYA//9S	\N	\N	\N	34	2015-10-26 18:00:47.866986	2015-10-21 22:52:31.197886	71.92.131.45	71.92.131.45	2014-05-16 22:14:37.04714	2015-10-26 18:00:47.868906
 \.
 
 
@@ -446,7 +446,6 @@ COPY artists (id, name, picture, bio, created_at, updated_at, avatar_file_name, 
 1	Josh Ludlow	\N	Josh has had a passion for art for as long as he can remember and is a self-taught artist with a professional education in tattooing. He is a self-proclaimed nerdy, hard-working husband and father, and recycles because his wife makes him. He loves most genres of music and attended countless concerts prior to being a dad. These days he stays busy being a family man, designing and tattooing custom artwork, and occasionally is able to fit a sci-fi movie into his busy schedule. \r\n\r\n\r\n	2014-05-15 00:48:08.325182	2014-10-20 22:39:14.862392	IMG_3661186158757.jpeg	image/jpeg	59148	2014-07-02 22:19:27.937831	https://www.facebook.com/josh.ludlow.tattoo?fref=ts	http://instagram.com/ludlowtattoo?modal=true
 2	Guillermo "G" Tavera	\N	Guillermo, also simply known as "G", can often be found devouring tacos outside the local taco truck. He knows good Mexican food when he finds it and isn't afraid of habaneros. 	2014-06-07 19:26:42.516659	2014-11-25 00:52:17.125744	10818897_990758680950284_1884890921_n.jpg	image/jpeg	27286	2014-11-25 00:52:15.111189	https://www.facebook.com/guillermo.tavera.9?fref=ts	http://instagram.com/guillermotavera?modal=true
 11	Joshua Teska	\N	Birds, birds, birds! Joshua Teska says that his favorite thing to tattoo is birds but he also loves doing large-scale custom work that includes Japanese, black and gray, full color, portraits, and anything imaginative and out of the ordinary. Teska recalls that as a young boy he was intrigued by his uncle’s old, traditional tattoos and the fact that it was possible to put artwork on someone’s skin. He got a book by Guy Aitchison and a book from Shige and read, studied, and reread those books until the bindings fell apart. He was hooked. Art was his calling and he began drawing and painting with oil, acrylic, and watercolor and also does murals. He began tattooing in San Francisco and has now tattooed for 12 years and counting.\r\n\r\n He thanks God for giving him such a wonderful life where he is able to have the opportunity to do what he loves and still put his family first. As a married father of five, when he isn’t busy tattooing or painting, he is either at church or hanging out with his family.	2015-03-30 21:04:39.191496	2015-03-30 21:04:39.191496	Teska_working.jpg	image/jpeg	28624	2015-03-30 21:04:37.170331	https://www.facebook.com/joshuateska1?fref=ts	https://instagram.com/joshuateska777/
-12	Josh Hawkins	\N		2015-04-06 22:52:20.679815	2015-04-06 22:52:20.679815	194780_238838126176478_1247445236_o.jpg	image/jpeg	165694	2015-04-06 22:52:19.004097	https://www.facebook.com/josh.hawkins.58?fref=ts	https://instagram.com/josh_hawkins_art/
 \.
 
 
@@ -565,11 +564,6 @@ COPY images (id, display, story_id, artist_id, img_file_name, img_content_type, 
 576	t	\N	11	rose_and_pearls.jpg	image/jpeg	92209	2015-03-30 21:15:13.644713	2015-03-30 21:15:14.453929	2015-03-30 21:15:14.453929
 577	t	\N	11	up_for_grabs-_side_or_leg.jpg	image/jpeg	170449	2015-03-30 21:15:14.969517	2015-03-30 21:15:15.886009	2015-03-30 21:15:15.886009
 578	t	\N	1	El.jpg	image/jpeg	28892	2015-04-06 22:22:54.723031	2015-04-06 22:22:56.546886	2015-04-06 22:22:56.546886
-579	t	\N	12	12856_854562907937327_3768492206100153686_n.jpg	image/jpeg	76734	2015-04-06 22:53:01.888244	2015-04-06 22:53:02.410981	2015-04-06 22:53:02.410981
-580	t	\N	12	1509732_804311472962471_7020156575882649976_n.jpg	image/jpeg	34367	2015-04-06 22:53:03.074099	2015-04-06 22:53:03.389587	2015-04-06 22:53:03.389587
-581	t	\N	12	1525067_689586364419235_931826334_n.jpg	image/jpeg	22874	2015-04-06 22:53:03.754482	2015-04-06 22:53:03.978975	2015-04-06 22:53:03.978975
-582	t	\N	12	skull_and_roses.jpg	image/jpeg	52295	2015-05-11 23:37:06.236927	2015-05-11 23:37:09.246827	2015-05-11 23:37:09.246827
-583	t	\N	12	wip_girl_skull.jpg	image/jpeg	69170	2015-05-11 23:37:11.238533	2015-05-11 23:37:11.687512	2015-05-11 23:37:11.687512
 584	t	\N	2	headshot.jpg	image/jpeg	87959	2015-05-11 23:38:56.615639	2015-05-11 23:38:57.257989	2015-05-11 23:38:57.257989
 585	t	\N	2	10407181_1034881766537975_5987906684793894587_n.jpg	image/jpeg	50803	2015-05-11 23:38:58.018698	2015-05-11 23:38:58.556795	2015-05-11 23:38:58.556795
 586	t	\N	2	lotus_and_the_lion.jpg	image/jpeg	43726	2015-05-11 23:38:58.97486	2015-05-11 23:38:59.33405	2015-05-11 23:38:59.33405
@@ -595,7 +589,40 @@ COPY images (id, display, story_id, artist_id, img_file_name, img_content_type, 
 607	t	\N	1	raven_hand_skull.jpg	image/jpeg	96294	2015-06-01 22:48:40.415298	2015-06-01 22:48:40.936907	2015-06-01 22:48:40.936907
 608	t	\N	1	my_owl.jpg	image/jpeg	110975	2015-06-01 22:48:41.65882	2015-06-01 22:48:42.320608	2015-06-01 22:48:42.320608
 609	t	\N	1	10410235_10204905076897720_9146011479690131494_n.jpg	image/jpeg	89755	2015-06-01 22:48:42.907456	2015-06-01 22:48:43.512628	2015-06-01 22:48:43.512628
-610	t	\N	12	dream_catcher.jpg	image/jpeg	76197	2015-08-04 00:58:55.987136	2015-08-04 00:59:00.684912	2015-08-04 00:59:00.684912
+611	t	\N	3	newest_watercolor.jpg	image/jpeg	86762	2015-09-07 23:44:32.29302	2015-09-07 23:44:33.564166	2015-09-07 23:44:33.564166
+613	t	\N	3	yoda.jpg	image/jpeg	32527	2015-09-07 23:44:36.069402	2015-09-07 23:44:36.234484	2015-09-07 23:44:36.234484
+614	t	\N	3	11742883_10153004909796569_4419668853293247413_n.jpg	image/jpeg	131300	2015-09-07 23:51:52.696042	2015-09-07 23:51:52.996257	2015-09-07 23:51:52.996257
+615	t	\N	3	11807258_1002466909797844_6877302748718918283_o.jpg	image/jpeg	68759	2015-09-07 23:51:53.86206	2015-09-07 23:51:54.036615	2015-09-07 23:51:54.036615
+616	t	\N	3	butterfly_arrow.jpg	image/jpeg	52691	2015-09-07 23:51:54.440001	2015-09-07 23:51:54.593753	2015-09-07 23:51:54.593753
+617	t	\N	3	10608029_732736956780479_1839383453_n.jpg	image/jpeg	139747	2015-09-07 23:52:57.369217	2015-09-07 23:52:57.491254	2015-09-07 23:52:57.491254
+618	t	\N	3	compass_rose.jpg	image/jpeg	58391	2015-09-07 23:52:58.384857	2015-09-07 23:52:58.553057	2015-09-07 23:52:58.553057
+619	t	\N	1	983802_10204905073457634_7922607921958381374_n.jpg	image/jpeg	117889	2015-09-07 23:57:29.891428	2015-09-07 23:57:30.111536	2015-09-07 23:57:30.111536
+620	t	\N	1	1464596_10204884868112513_2474010365203322202_n.jpg	image/jpeg	91198	2015-09-07 23:57:30.896705	2015-09-07 23:57:31.079598	2015-09-07 23:57:31.079598
+621	t	\N	1	10488168_10204019747405036_8445653888743969043_n.jpg	image/jpeg	49204	2015-09-07 23:57:31.600515	2015-09-07 23:57:31.722608	2015-09-07 23:57:31.722608
+622	t	\N	1	10492259_985526301491905_647839922795360563_n.jpg	image/jpeg	96607	2015-09-08 00:01:01.850462	2015-09-08 00:01:02.018101	2015-09-08 00:01:02.018101
+623	t	\N	1	10599228_10204830443271926_8670708434471075502_n.jpg	image/jpeg	88719	2015-09-08 00:01:02.905028	2015-09-08 00:01:03.105857	2015-09-08 00:01:03.105857
+624	t	\N	1	11659232_986304274747441_6954970699243555307_n.jpg	image/jpeg	88885	2015-09-08 00:01:03.586218	2015-09-08 00:01:03.786903	2015-09-08 00:01:03.786903
+625	t	\N	1	traditional_heart.jpg	image/jpeg	96607	2015-09-08 00:01:55.789705	2015-09-08 00:01:55.950908	2015-09-08 00:01:55.950908
+626	t	\N	1	sternum.PNG	image/png	488646	2015-09-08 00:01:56.738281	2015-09-08 00:01:57.014003	2015-09-08 00:01:57.014003
+627	t	\N	1	lighthouse.jpg	image/jpeg	130933	2015-09-08 00:01:57.798845	2015-09-08 00:01:58.004307	2015-09-08 00:01:58.004307
+628	t	\N	2	11693956_988233697887832_8814360854020260986_n.jpg	image/jpeg	75781	2015-09-08 00:04:42.10571	2015-09-08 00:04:42.283815	2015-09-08 00:04:42.283815
+629	t	\N	2	shoulder_eye.jpg	image/jpeg	70455	2015-09-08 00:04:43.074932	2015-09-08 00:04:43.268133	2015-09-08 00:04:43.268133
+630	t	\N	2	chola.jpg	image/jpeg	41218	2015-09-08 00:04:43.711034	2015-09-08 00:04:43.900197	2015-09-08 00:04:43.900197
+631	t	\N	2	feather.jpg	image/jpeg	32692	2015-09-08 00:07:08.657157	2015-09-08 00:07:08.797814	2015-09-08 00:07:08.797814
+632	t	\N	11	11751428_999242860120249_390295958066199626_n.jpg	image/jpeg	94824	2015-09-08 00:08:25.942071	2015-09-08 00:08:26.162468	2015-09-08 00:08:26.162468
+633	t	\N	11	11742643_1000787019965833_3710865388387794334_n.jpg	image/jpeg	137785	2015-09-08 00:08:26.946252	2015-09-08 00:08:27.177144	2015-09-08 00:08:27.177144
+634	t	\N	11	11696016_999558133422055_2467992133304247709_n.jpg	image/jpeg	129327	2015-09-08 00:08:27.737844	2015-09-08 00:08:28.006879	2015-09-08 00:08:28.006879
+635	t	\N	11	hummingbird.jpg	image/jpeg	132919	2015-09-08 00:08:40.194885	2015-09-08 00:08:40.414878	2015-09-08 00:08:40.414878
+636	t	\N	1	raven_new.jpg	image/jpeg	77732	2015-10-26 18:04:12.182521	2015-10-26 18:04:13.827015	2015-10-26 18:04:13.827015
+637	t	\N	1	jesus_new.jpg	image/jpeg	73707	2015-10-26 18:04:15.302257	2015-10-26 18:04:15.546855	2015-10-26 18:04:15.546855
+638	t	\N	3	skull_and_cross.jpg	image/jpeg	72151	2015-10-26 18:04:34.207193	2015-10-26 18:04:34.466331	2015-10-26 18:04:34.466331
+639	t	\N	1	elephant.jpg	image/jpeg	71242	2015-10-26 18:09:56.743149	2015-10-26 18:09:57.005544	2015-10-26 18:09:57.005544
+640	t	\N	11	eagle.jpg	image/jpeg	156811	2015-10-26 18:10:07.602766	2015-10-26 18:10:07.982549	2015-10-26 18:10:07.982549
+641	t	\N	3	owl.jpg	image/jpeg	74537	2015-10-26 18:11:13.878594	2015-10-26 18:11:14.172349	2015-10-26 18:11:14.172349
+642	t	\N	11	ship_in_a_bottle.jpg	image/jpeg	119938	2015-10-26 18:13:33.932362	2015-10-26 18:13:34.230487	2015-10-26 18:13:34.230487
+643	t	\N	11	ship_in_a_bottle1.jpg	image/jpeg	169219	2015-10-26 18:13:35.145756	2015-10-26 18:13:35.463294	2015-10-26 18:13:35.463294
+644	t	\N	3	microphone.jpg	image/jpeg	86762	2015-10-26 18:17:02.863995	2015-10-26 18:17:03.320903	2015-10-26 18:17:03.320903
+645	t	\N	3	paris_side.jpg	image/jpeg	48818	2015-10-26 19:15:38.923786	2015-10-26 19:15:39.240789	2015-10-26 19:15:39.240789
 \.
 
 
@@ -603,7 +630,7 @@ COPY images (id, display, story_id, artist_id, img_file_name, img_content_type, 
 -- Name: images_id_seq; Type: SEQUENCE SET; Schema: public; Owner: rails
 --
 
-SELECT pg_catalog.setval('images_id_seq', 610, true);
+SELECT pg_catalog.setval('images_id_seq', 645, true);
 
 
 --
