@@ -50,11 +50,21 @@
     
         <section id="displays" class="col-md-8">
             <ul>
-                <li class="list-display" ng-repeat="data in display">
-                    <div>
-                        <img class="display animate-show" fade-in ng-src='{{data.image}}'>
-                    </div>
-                </li>
+                <div class="row">
+                    <li class="list-display"><img class="display animate-show" fade-in ng-src='{{display[0].image}}'></li>
+                    <li class="list-display"><img class="display animate-show" fade-in ng-src='{{display[1].image}}'></li>
+                    <li class="list-display"><img class="display animate-show" fade-in ng-src='{{display[2].image}}'></li>
+                </div>
+                <div class="row">
+                    <li class="list-display"><img class="display animate-show" fade-in ng-src='{{display[3].image}}'></li>
+                    <li class="list-display"><img class="display animate-show" fade-in ng-src='{{display[4].image}}'></li>
+                    <li class="list-display"><img class="display animate-show" fade-in ng-src='{{display[5].image}}'></li>
+                </div>
+                <div class="row">
+                    <li class="list-display"><img class="display animate-show" fade-in ng-src='{{display[6].image}}'></li>
+                    <li class="list-display"><img class="display animate-show" fade-in ng-src='{{display[7].image}}'></li>
+                    <li class="list-display"><img class="display animate-show" fade-in ng-src='{{display[8].image}}'></li>
+                </div>
             </ul>
         </section>
     </div>
