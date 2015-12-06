@@ -25,8 +25,10 @@ class HomeController < ApplicationController
   def display_images
     #Gets 16 images for homepage samples
     #@images = Image.where(display: true).limit(16)
-    @images = Image.where(display: true).last(16)
-
+    #@images = Image.where(display: true).last(16)
+    
+    #Get all images.  AngularJS will randomize
+    @images = Image.where(display: true)
     respond_to do |format|
       format.json {render :display}
       format.html {render status: :error, nothing: true}
