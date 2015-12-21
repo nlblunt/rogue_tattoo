@@ -1,32 +1,40 @@
-
-	<header>
-		<nav>
-			<ul>
-				<li><a href="/#!/">Home</a></li>
+<div class="container-fluid">
+    <div class="row">
+        <header>
+        <nav>
+            <ul>
+				<li><a href="/#!/">Rogue Tattoo</a></li>
 				<li><a href="/#!/artists">Artists</a></li>
 				<li><a href="http://www.permanentmakeupbybritta.com" target="new">Permanent Makeup</a></li>
-				<li></li>
-			</ul>
-		</nav>
-        <img src="images/header.png">
-	</header>
-
-	<section id="main">
-		<div id="displays">
-            <ul>
-                <li class="list-display" ng-repeat="data in display.data">
-                    <div class="display" style="background-image: url('{{data.image}}');">
-
-                    </div>
-                </li>
             </ul>
-		</div>
+        </nav>
+        </header>
+    	
+    	<section id="main" class="col-md-4">
 
         <article id="greetings">
             <section id="rogue-info">
-                        <h1>Rogue Tattoo</h1>
+                        <img class="logo" ng-src="/images/logo.jpg">
+                        
+                        <ul>
+                            <li id="address">
+                                <address>1050 Crater Lake Ave, Medford OR 97504</address>
+                            </li>
+                            <li id="phone">
+                                Phone: 541-622-8119
+                            </li>
+                            <li id="hours">
+                                Hours: Monday - Saturday: 11AM - 7PM
+                            </li>
+                            <li>
+                                <a href="http://www.rubywebs.net">Created and Maintained by Rubywebs.net</a>
+                            </li>
+                        </ul>
+                        
                         <p>Rogue Tattoo, a tattoo shop serving Southern Oregon, including Ashland, Medford, and Grants Pass.  Rogue Tattoo offers traditional, realism, tribal, black and grey, and Japanese tattoos, as well as Permanent Makeup.  Appointments prefered, but walk-ins welcome.
                         </p>
+                        
+
             </section>
 
             <section id="news">
@@ -38,21 +46,26 @@
             </ul>
             </section>
         </article>
-    </section>
-
-    <footer>
-        <ul>
-            <li id="address">
-                <address>1050 Crater Lake Ave, Medford OR 97504</address>
-            </li>
-            <li id="phone">
-                Phone: 541-622-8119
-            </li>
-            <li id="hours">
-                Hours: Monday - Saturday: 11AM - 7PM
-            </li>
-            <li>
-                <a href="http://www.rubywebs.net">Created and Maintained by Rubywebs.net</a>
-            </li>
-        </ul>
-    </footer>
+        </section>
+    
+        <section id="displays" class="col-md-8">
+            <ul>
+                <div class="row">
+                    <li class="list-display"><img class="display animate-show" fade-in ng-src='{{display[0].image}}'></li>
+                    <li class="list-display"><img class="display animate-show" fade-in ng-src='{{display[1].image}}'></li>
+                    <li class="list-display"><img class="display animate-show" fade-in ng-src='{{display[2].image}}'></li>
+                </div>
+                <div class="row">
+                    <li class="list-display"><img class="display animate-show" fade-in ng-src='{{display[3].image}}'></li>
+                    <li class="list-display"><img class="display animate-show" fade-in ng-src='{{display[4].image}}'></li>
+                    <li class="list-display"><img class="display animate-show" fade-in ng-src='{{display[5].image}}'></li>
+                </div>
+                <div class="row">
+                    <li class="list-display"><img class="display animate-show" fade-in ng-src='{{display[6].image}}'></li>
+                    <li class="list-display"><img class="display animate-show" fade-in ng-src='{{display[7].image}}'></li>
+                    <li class="list-display"><img class="display animate-show" fade-in ng-src='{{display[8].image}}'></li>
+                </div>
+            </ul>
+        </section>
+    </div>
+</div>
