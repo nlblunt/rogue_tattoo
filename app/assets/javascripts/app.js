@@ -8,6 +8,7 @@
 			'appControllers',
 			'appServices',
 			'appDirectives',
+			'angular-pinterest',
 			'angulartics',
 			'angulartics.google.analytics'
 		]);

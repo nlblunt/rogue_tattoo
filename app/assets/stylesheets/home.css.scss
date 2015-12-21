@@ -50,6 +50,16 @@ section#main ul
   height: 100%;
 }
 
+.float-left
+{
+  float: left;
+}
+
+.float-right
+{
+  float: right;
+}
+
 header
 {
   margin-bottom: 10px;
@@ -58,9 +68,9 @@ header
 
 header img
 {
-  width: 80%;
-  margin-left: 10%;
-  margin-right: 10%;
+  //width: 80%;
+  height: 100%;
+  margin-right: 10px;
 }
 
 header nav
@@ -452,7 +462,15 @@ div#full-image img
   text-align: center;
 }
 
+.margin-zero
+{
+  margin: 0px;
+}
 
+#pin
+{
+  margin-right: 10px;
+}
 div#dashboard
 {
   color: red;
