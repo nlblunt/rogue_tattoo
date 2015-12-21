@@ -1,13 +1,14 @@
-	<header>
-		<nav>
-			<ul>
-				<li><a href="/#!/">Home</a></li>
+        <header>
+        <nav>
+            <ul>
+				<li><a href="/#!/">Rogue Tattoo</a></li>
 				<li><a href="/#!/artists">Artists</a></li>
 				<li><a href="http://www.permanentmakeupbybritta.com" target="new">Permanent Makeup</a></li>
-				<li>Appointments</li>
-			</ul>
-		</nav>
-	</header>
+				<li class="float-right margin-zero"><a href="https://www.facebook.com/RogueTattoos" target="new"><img ng-src="/images/facebook.jpg"></a></li>
+				<li class="float-right margin-zero"><a href="https://www.instagram.com/roguetattoo1050" target="new"><img ng-src="/images/instagram.jpg"></a></li>
+            </ul>
+        </nav>
+        </header>
 
 	<h1 class="text-center show-artist">{{artist.data.name}}</h1>
 	<div id="artist-profile">
@@ -30,5 +31,7 @@
 
 		<div id="full-image">
 			<img ng-src={{fullsize}} alt="Full Size Preview" />
+			<pin-it url="'http://www.rogue-tattoo.com'" description='artist.data.name' media='fullsize' config=""></pin-it>
 		</div>
 	</div>
+	

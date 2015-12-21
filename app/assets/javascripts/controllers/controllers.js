@@ -30,7 +30,6 @@ appControllers.controller('homeController', ['$scope', '$interval', 'homeFactory
 		
 		//Randomize the list of display images
 		reserve_display = shuffleArray(data.data);
-		console.log(reserve_display);
 		for(var i = 0; i < 9; i++)
 		{
 			current_display.push(reserve_display[0]);
@@ -38,8 +37,6 @@ appControllers.controller('homeController', ['$scope', '$interval', 'homeFactory
 			reserve_display.shift();
 			
 		}
-		console.log(reserve_display);
-		console.log(current_display);
 		//$scope.display = shuffleArray(data.data);
 		$scope.display = current_display;
 	});
@@ -51,7 +48,6 @@ appControllers.controller('homeController', ['$scope', '$interval', 'homeFactory
 		var slot = Math.floor((Math.random() * 9));
 		//Change to next reserve_display
 		$scope.display[slot] = reserve_display[0];
-		console.log($scope.display);
 		//Shift reserve display
 		reserve_display.push(reserve_display[0]);
 		reserve_display.shift();
@@ -86,7 +82,6 @@ appControllers.controller('artistController', ['$scope', 'artistFactory', functi
 	artistFactory.getArtistList().then(function(data)
 	{
 		$scope.artists = data;
-		console.log(data);
 	});
 }]);
 
